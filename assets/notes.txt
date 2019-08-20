@@ -1,0 +1,114 @@
+product:
+---------
+id
+name
+url
+description
+category_id
+image
+material
+width
+price_size
+price_brillants
+meta_keywords
+meta_description
+meta_image
+created_at
+
+category:
+-----------
+id
+name
+created_at
+
+id	name			name
+1	oro blanco		bílé zlato
+2	oro combinado	kombinované zlato
+3	oro amarillo	žluté zlato
+4	oro rojo		červené zlato
+
+
+image (fotogalería):
+--------------------
+id
+product_id
+image
+created_at
+
+
+related_product (productos parecidos):
+---------------------------------------
+id
+product_id
+product_related
+created_at
+
+settings:
+---------
+id
+title
+logo
+whatsapp
+facebook
+instagram
+email
+phone
+city
+zip_code
+contact_name
+contact_identification
+latitude
+longitude
+
+pages:
+------
+id
+title
+decription
+meta_keywords
+meta_description
+meta_image
+position
+active
+created_at
+
+price calculation: (calculo de precios)
+---------------------------------------
+id
+name
+email
+telephone
+type_male
+type_female
+size_male
+size_female
+type_stone (1=zirkon, 2=brillant)
+num_stone
+material (1=zlato 14 kt, 2=stříbro)
+color (1=blanco 2=amarillo, 3=rojo)
+notes
+created_at
+
+order: (formulario de pedidos)
+-------------------------------
+id
+name
+address
+city
+zip_code
+contact_telephone
+contact_email
+type_male
+type_female
+size_male
+size_female
+type_stone (1=zirkon, 2=brillant)
+num_stone
+material (1=zlato 14 kt, 2=stříbro)
+color (1=blanco 2=amarillo, 3=rojo)
+text_engraving_male
+text_engraving_female
+takeover_method (1=cash on delivery, 2=in person)
+notes
+created_at
+
