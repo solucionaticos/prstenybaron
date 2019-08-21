@@ -23,12 +23,12 @@ class Pages extends MY_Controller {
         //-- Lista --------
         $crud->columns("title","meta_keywords","meta_image","created_at");
         //-- Nuevo --------
-        $crud->add_fields("title","decription","meta_keywords","meta_description","meta_image");
+        $crud->add_fields("title","description","meta_keywords","meta_description","meta_image");
         //-- Editar --------
-        $crud->edit_fields("title","decription","meta_keywords","meta_description","meta_image");
+        $crud->edit_fields("title","description","meta_keywords","meta_description","meta_image");
         //-- Etiquetas --------
         $crud->display_as("title","Title");
-        $crud->display_as("decription","Decription");
+        $crud->display_as("description","Description");
         $crud->display_as("meta_keywords","Meta Keywords");
         $crud->display_as("meta_description","Meta Description");
         $crud->display_as("meta_image","Meta Image");
@@ -39,7 +39,7 @@ class Pages extends MY_Controller {
 
         //-- Tipos de Campos --------
         $crud->field_type("title", "string");
-        $crud->field_type("decription", "text");
+        $crud->field_type("description", "text");
         $crud->field_type("meta_keywords", "string");
         $crud->field_type("meta_description", "text");
         //$crud->field_type("meta_image", "string");
