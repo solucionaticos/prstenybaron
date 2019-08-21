@@ -66,7 +66,7 @@
 						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Zlato</a>
+						<a class="nav-link" href="<?php echo  base_url().'Home/category/'.'0'?>">Zlato</a>
 					</li> 
 				</ul>
 
@@ -84,7 +84,7 @@
 						<a class="nav-link" href="#">Důležité informace</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Kontakt</a>
+						<a class="nav-link" href="<?php echo  base_url('contact')?>">Kontakt</a>
 					</li> 
 				</ul>
 
