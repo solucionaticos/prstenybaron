@@ -7,6 +7,9 @@ class Home extends MY_Controller {
 	}
 
 	public function index() {
-		echo 'Kilo!';
+		$data = array(
+			'title' => ''
+		);		
+		$this->parser->parse('front/home', $data);
 	}
 }		
