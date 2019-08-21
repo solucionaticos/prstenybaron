@@ -51,4 +51,5 @@ defined('BASEPATH') OR exit('Přímý přístup k tomuto skriptu není povolen.'
 */
 $route['default_controller'] = 'home';
 $route['404_override'] = '';
+$route['(category)/(id)'] = 'home/category/$id';
 $route['translate_uri_dashes'] = FALSE;
