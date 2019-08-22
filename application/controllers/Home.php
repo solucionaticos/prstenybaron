@@ -71,5 +71,35 @@ class Home extends MY_Controller {
 		$this->load->view('front/layouts/footer');
 	}
 
+	public function detail($url)
+	{
+		$page = $this->Model->getRow('pages', 1); 
+		$settings = $this->Model->getRow('settings', 1);
+		$products = $this->db->get_where('product', array('url' => $url))->result();
+
+		$id_product;
+		foreach ($products as $data) {
+			$id_product=$data->id;
+		}
+
+		$image = $this->db->get_where('image', array('product_id' => $id_product))->result();
+		
+
+		$data = array(
+			'page_title' => $page->title,
+			'page_description' => $page->description, 
+			'facebook_url' => $settings->facebook,
+			'instagram_url' => $settings->instagram,
+			'whatsapp_number' => $settings->whatsapp,
+			'products' => $products,
+			'image' =>$image
+		);
+
+
+
+		$this->load->view('front/layouts/header');
+		$this->parser->parse('front/detail',$data);
+		$this->load->view('front/layouts/footer');
+	}
 	
 }		

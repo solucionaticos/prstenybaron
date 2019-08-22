@@ -32,7 +32,7 @@
 								
                             	
 								<div class="text-center">
-		    						<div class="prd-link"><a href="#">{name}</a></div>
+		    						<div class="prd-link"><a href="<?php echo  base_url().'home/detail/'.'{url}'?>">{name}</a></div>
 								</div>
 
 								<div style="background:white; text-align:center;">
