@@ -1,76 +1,93 @@
+<div class="work">
 
-
-	<div class="work">
-		
+<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark" style="background-image: url('../assets/images/contact.jpg');">
+           <h1 class="display-4 font-italic" style="text-align: center;">kontakt</h1>
+   </div>		
 		<div class="container">
-
-  <div class="hero-wrap hero-bread" style="background-image: url('../assets/images/contact.jpg');">
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center">
-          <div class="col-md-9 ftco-animate text-center">
-            <p class="breadcrumbs"><span class="mr-2"></span> </p>
-            <h1 class="mb-0 bread" style="color: white;">Contact Us</h1>
-          </div>
-        </div>
-      </div>
-    </div>
+      
 
  <section class="ftco-section contact-section bg-light">
       <div class="container">
-      	<div class="row d-flex mb-5 contact-info">
-          <div class="w-100"></div>
-          <div class="col-md-3 d-flex">
-          	<div class="info bg-white p-4">
-	            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-	          </div>
-          </div>
-          <div class="col-md-3 d-flex">
-          	<div class="info bg-white p-4">
-	            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-	          </div>
-          </div>
-          <div class="col-md-3 d-flex">
-          	<div class="info bg-white p-4">
-	            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-3 d-flex">
-          	<div class="info bg-white p-4">
-	            <p><span>Website</span> <a href="#">yoursite.com</a></p>
-	          </div>
-          </div>
-        </div>
-        <div class="row block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-white p-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+          <div class="row">
+            <div class="col">
+
+                <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 shadow-sm">
+                  
+                  <div class="card-body">
+                  
+                      <div class="map-responsive">
+                       <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"  frameborder="0" width="500" height="450" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    
+                  </div>
+                </div>
+                
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+              
+                 
+            </div>
+            <div class="col">
+               <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">kontakt</h4>
+                  </div>
+                  <div class="card-body">
+                  
+                    <form class="needs-validation" novalidate="">
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label for="firstName">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="lastName">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                            
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="username">Username</label>
+                          <div class="input-group">
+                            
+                            <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                           
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                         
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="address">Address</label>
+                          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                          
+                        </div>
+
+                       
+       
+                        <hr class="mb-4">
+                        
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">poslat</button>
+                      </form>
+                    
+                  </div>
+                </div>
+                
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
-          
+            </div>
           </div>
 
-          <div class="col-md-6 d-flex">
-          	<div id="map" class="bg-white"></div>
-          </div>
-        </div>
+
+          
       </div>
     </section> 
-			<div class="row m20">
-				<div class="col-sm-12"></div>
-			</div>
 		
 		</div>
 
