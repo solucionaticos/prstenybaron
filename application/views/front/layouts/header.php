@@ -15,7 +15,9 @@
 
 </head>
 <body>
-
+<style>
+body {overflow-x:hidden;}
+</style>
 	<header>
 		<div class="row d-none d-md-block">
 			<div class="col-xl-12 text-right nowrap pr3p pt15">
