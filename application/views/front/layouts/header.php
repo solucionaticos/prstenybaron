@@ -54,7 +54,7 @@ body {overflow-x:hidden;}
 						<a class="nav-link nav-link-active" href="#">Úvod</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">O nás</a>
+						<a class="nav-link" href="<?php echo  base_url().'Home/category/'.'0'?>">O nás</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
