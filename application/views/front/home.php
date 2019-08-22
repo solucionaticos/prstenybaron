@@ -78,15 +78,19 @@
 					
                       <div class="form-group col-md-6">
                         <label for="inputEmail4">jméno a příjmení</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        <input type="email" class="form-control" id="name" name="name" placeholder="">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="inputPassword4">e-mail nebo telefon:
 						</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        <input type="password" class="form-control" id="email" name="email" placeholder="">
                       </div>
 					</div>
-
+					<div class="form-group ">
+                        <label for="inputPassword4">telefon:
+						</label>
+                        <input type="password" class="form-control" id="telephone" name="telephone" placeholder="">
+                    </div>
 					
 
 					<label for="inputEmail4">TYP PRSTENU</label>
@@ -94,12 +98,12 @@
 					
 						<div class="form-group col-md-6">
 						<label for="inputEmail4">dámský:</label>
-						<input type="email" class="form-control" id="inputEmail4" placeholder="">
+						<input type="email" class="form-control" id="type_male"  name="type_male" placeholder="">
 						</div>
 						<div class="form-group col-md-6">
 						<label for="inputPassword4">pánský:
 						</label>
-						<input type="password" class="form-control" id="inputPassword4" placeholder="">
+						<input type="password" class="form-control" id="type_female" name="type_female" placeholder="">
 						</div>
 					  </div>
 					  <label for="inputEmail4">VELIKOST PRSTENU</label>
@@ -107,12 +111,12 @@
 					
 						<div class="form-group col-md-6">
 						<label for="inputEmail4">dámský:</label>
-						<input type="email" class="form-control" id="inputEmail4" placeholder="">
+						<input type="email" class="form-control" id="size_male" name="size_male" placeholder="">
 						</div>
 						<div class="form-group col-md-6">
 						<label for="inputPassword4">pánský:
 						</label>
-						<input type="password" class="form-control" id="inputPassword4" placeholder="">
+						<input type="password" class="form-control" id="size_female" name="size_female" placeholder="">
 						</div>
 					  </div>
 
@@ -121,13 +125,13 @@
 					<label for="inputEmail4">TYP KAMENE</label>  
 					<div class="form-check">
 						<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">zirkon
+								<input type="radio" class="form-check-input" id="type_stone" name="type_stone" >zirkon
 
 						</label>
 					</div>
 					<div class="form-check">
 							<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">briliant
+								<input type="radio" class="form-check-input" id="type_stone" name="type_stone">briliant
 							</label>
 					</div>
 
@@ -135,13 +139,13 @@
 					<label for="inputEmail4">MATERIÁL</label>  
 					<div class="form-check">
 						<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">zlato 14kt
+								<input type="radio" class="form-check-input" id="material" name="material">zlato 14kt
 
 						</label>
 					</div>
 					<div class="form-check">
 							<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">stříbro
+								<input type="radio" class="form-check-input" id="material" name="material">stříbro
 							</label>
 					</div>
 					
@@ -149,24 +153,24 @@
 					<label for="inputEmail4"> ZLATO, BARVA</label>  
 					<div class="form-check">
 						<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">bílé
+								<input type="radio" class="form-check-input" id="color" name="color">bílé
 
 
 						</label>
 					</div>
 					<div class="form-check">
 							<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">žluté
+								<input type="radio" class="form-check-input" id="color" name="color">žluté
 							</label>
 					</div>
 					<div class="form-check">
 							<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">červené
+								<input type="radio" class="form-check-input" id="color" name="color">červené
 							</label>
 					</div>
 					<div class="form-group">
 						<label for="usr">počet kamenů:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="num_stone" name="num_stone">
 					</div>
 
 					<span> Nejpozději do druhého dne Vám bude odeslána cenová nabídka.</span>
@@ -174,7 +178,7 @@
 				
 					<div class="form-group">
 						<label for="message-text" class="col-form-label">Vaše poznámky, vlastní úpravy:</label>
-						<textarea class="form-control" id="message-text"></textarea>
+						<textarea class="form-control" id="notes" name="notes"></textarea>
 					</div>
 
                   </form>
@@ -207,96 +211,84 @@
 
 					<div class="form-group">
 						<label for="usr">jméno a příjmení:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="name" name="name">
 					</div>
 
 					<div class="form-group">
 						<label for="usr">ulice:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="address" name="address">
 					</div>
 
 					<div class="form-group">
 						<label for="usr">město:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="city" name="city">
 					</div>
 
 					<div class="form-group">
 						<label for="usr">PSČ:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="zip_code" name="zip_code">
 					</div>
 
 					<div class="form-group">
 						<label for="usr">kontaktní telefon:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="contact_telephone" name="contact_telephone">
 					</div>
 
 					<div class="form-group">
 						<label for="usr">kontaktní e-mail:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="contact_email" name="contact_email">
 					</div>
 
 					<label for="inputEmail4">TYP PRSTENU</label>
 
 					<div class="form-group">
 						<label for="usr">dámský:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="type_male" name="type_male">
 					</div>
 					<div class="form-group">
 						<label for="usr">pánský:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="type_female" name="type_female">
 					</div>
 
 					<label for="inputEmail4">VELIKOST PRSTENU</label>
 
 					<div class="form-group">
 						<label for="usr">dámský:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="size_male" name="size_male">
 					</div>
 					<div class="form-group">
 						<label for="usr">pánský:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="size_female" name="size_female">
 					</div>
-                    <div class="form-row">
-					
-                      <div class="form-group col-md-6">
-                        <label for="inputEmail4">jméno a příjmení</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputPassword4">e-mail nebo telefon:
-						</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                      </div>
-					</div>
-
+                   
 					
 					<label for="inputEmail4">TYP KAMENE</label>  
 					<div class="form-check">
 						<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">zirkon
+								<input type="radio" class="form-check-input" id="type_stone" name="type_stone">zirkon
 
 						</label>
 					</div>
 					<div class="form-check">
 							<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">briliant
+								<input type="radio" class="form-check-input" id="type_stone" name="type_stone">briliant
 							</label>
 					</div>
 					<div class="form-group">
 						<label for="usr">počet kamenů:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="num_stone" name="num_stone">
 					</div>
 					<br/>
 					<label for="inputEmail4">MATERIÁL</label>  
 					<div class="form-check">
 						<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">zlato 14kt
+								<input type="radio" class="form-check-input" id="material" name="material">zlato 14kt
 
 						</label>
 					</div>
 					<div class="form-check">
 							<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">stříbro
+								<input type="radio" class="form-check-input" id="material" name="material">stříbro
 							</label>
 					</div>
 					
@@ -304,19 +296,19 @@
 					<label for="inputEmail4"> ZLATO, BARVA</label>  
 					<div class="form-check">
 						<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">bílé
+								<input type="radio" class="form-check-input" id="color" name="color">bílé
 
 
 						</label>
 					</div>
 					<div class="form-check">
 							<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">žluté
+								<input type="radio" class="form-check-input" id="color" name="color">žluté
 							</label>
 					</div>
 					<div class="form-check">
 							<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">červené
+								<input type="radio" class="form-check-input" id="color" name="color">červené
 							</label>
 					</div>
 
@@ -324,30 +316,30 @@
 
 					<div class="form-group">
 						<label for="usr">dámský:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="text_engraving_male" name="text_engraving_male">
 					</div>
 
 						<div class="form-group">
 						<label for="usr">pánský:</label>
-						<input type="text" class="form-control" id="usr">
+						<input type="text" class="form-control" id="text_engraving_female" name="text_engraving_female">
 					</div>
 
 					<label for="inputEmail4">ZPůSOB PřEVZTÍ</label>  
 					<div class="form-check">
 						<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">Česká pošta dobírka
+								<input type="radio" class="form-check-input" id="takeover_method" name="takeover_method">Česká pošta dobírka
 						</label>
 					</div>
 					<div class="form-check">
 							<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optradio">osobně na adrese provozovny
+								<input type="radio" class="form-check-input" id="takeover_method" name="takeover_method">osobně na adrese provozovny
 							</label>
 					</div>
 					<span> Objednávka telefonicky: 732 450 054</span>
 				
 					<div class="form-group">
 						<label for="message-text" class="col-form-label">Vaše poznámky, vlastní úpravy:</label>
-						<textarea class="form-control" id="message-text"></textarea>
+						<textarea class="form-control" id="notes" name="notes"></textarea>
 					</div>
 					
 
