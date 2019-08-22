@@ -69,42 +69,17 @@
 
        <div class="container">
             
-            <div class="row blog">
-                <div class="col-md-12">
-                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-
-                        <ol class="carousel-indicators">
-                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#blogCarousel" data-slide-to="1"></li>
-                        </ol>
-
-                        <!-- Carousel items -->
-                        <div class="carousel-inner">
-
-                            <div class="carousel-item active">
-                                <div class="row">
-                                   
-                                    <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                             
-                                        </a>
-                                         <h2 style="text-align: center;">B3</h2>
-        
-                                    </div>
-                               
-                                   
-                                </div>
-                                <!--.row-->
-                            </div>
-                         
-                        </div>
-                        <!--.carousel-inner-->
-                    </div>
-                    <!--.Carousel-->
-
+           <div class="card-deck">
+             {related_product}
+              <div class="card">
+                <img src="<?php echo base_url(); ?>assets/uploads/files/products/{image}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="<?php echo  base_url().'home/detail/'.'{url}'?>"><h5 class="card-title" style="text-align: center;">{name}</h5></a>
                 </div>
-            </div>
+              </div>
+              {/related_product}
+          </div>
+
        </div>
        <br>
           </section> 

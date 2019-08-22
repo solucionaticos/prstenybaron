@@ -82,8 +82,16 @@ class Home extends MY_Controller {
 			$id_product=$data->id;
 		}
 
+
 		$image = $this->db->get_where('image', array('product_id' => $id_product))->result();
-		
+
+        $related_product =$this->db->select("product.image,product.name,product.url")
+			->from("product")
+			->join("related_product", "product.id = related_product.product_id")
+			->where('related_product.product_id=', $id_product)
+			->get()	
+			->result();
+
 
 		$data = array(
 			'page_title' => $page->title,
@@ -92,7 +100,8 @@ class Home extends MY_Controller {
 			'instagram_url' => $settings->instagram,
 			'whatsapp_number' => $settings->whatsapp,
 			'products' => $products,
-			'image' =>$image
+			'image' =>$image,
+			'related_product' =>$related_product
 		);
 
 
@@ -101,5 +110,7 @@ class Home extends MY_Controller {
 		$this->parser->parse('front/detail',$data);
 		$this->load->view('front/layouts/footer');
 	}
+
+
 	
 }		
