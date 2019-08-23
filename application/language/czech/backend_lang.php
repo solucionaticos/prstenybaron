@@ -31,3 +31,8 @@ $lang['b_menu_categories_link'] = "Categories";
 // Images
 $lang['b_products_label_image'] = "Image";
 $lang['b_products_label_created_at'] = "Created at";
+
+//product
+$lang['b_products_label_name'] = "name";
+
+

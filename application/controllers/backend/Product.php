@@ -25,7 +25,7 @@ class Product extends MY_Controller {
         $crud->order_by('id','desc');
 
         //-- Lista --------
-        $crud->columns("name","url","category_id","image","material","width","price_size","price_brillants","meta_keywords","meta_image","created_at");
+        $crud->columns($this->lang->line('b_products_label_name', FALSE),"url","category_id","image","material","width","price_size","price_brillants","meta_keywords","meta_image","created_at");
         //-- Nuevo --------
         $crud->add_fields("name","url","description","category_id","image","material","width","price_size","price_brillants","meta_keywords","meta_description","meta_image");
         //-- Editar --------
