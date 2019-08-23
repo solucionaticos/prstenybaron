@@ -21,19 +21,19 @@ class Pages extends MY_Controller {
         $crud = new grocery_CRUD(); // Definicion del CRUD
         $crud->set_table("pages"); // Tabla del Crud
         //-- Lista --------
-        $crud->columns("title","code","meta_keywords","meta_image","created_at");
+        $crud->columns($this->lang->line('b_pages_label_title', FALSE),$this->lang->line('b_pages_label_code', FALSE),$this->lang->line('b_pages_label_meta_keywords', FALSE),$this->lang->line('b_pages_label_meta_image', FALSE),$this->lang->line('b_pages_label_created_at', FALSE));
         //-- Nuevo --------
         $crud->add_fields("title","code","description","meta_keywords","meta_description","meta_image");
         //-- Editar --------
         $crud->edit_fields("title","code","description","meta_keywords","meta_description","meta_image");
         //-- Etiquetas --------
-        $crud->display_as("title","Title");
-        $crud->display_as("code","Code");
-        $crud->display_as("description","Description");
-        $crud->display_as("meta_keywords","Meta Keywords");
-        $crud->display_as("meta_description","Meta Description");
-        $crud->display_as("meta_image","Meta Image");
-        $crud->display_as("created_at","Created At");
+        $crud->display_as($this->lang->line('b_pages_label_title', FALSE),"Title");
+        $crud->display_as($this->lang->line('b_pages_label_code', FALSE),"Code");
+        $crud->display_as($this->lang->line('b_pages_label_descripcion', FALSE),"Description");
+        $crud->display_as($this->lang->line('b_pages_label_meta_keywords', FALSE),"Meta Keywords");
+        $crud->display_as($this->lang->line('b_pages_label_meta_description', FALSE),"Meta Description");
+        $crud->display_as($this->lang->line('b_pages_label_meta_image', FALSE),"Meta Image");
+        $crud->display_as($this->lang->line('b_pages_label_created_at', FALSE),"Created At");
 
         //-- Upload File --------
         $crud->set_field_upload("meta_image","assets/uploads/files/pages_meta");

@@ -49,3 +49,13 @@ $lang['b_products_label_created_at'] = "created_at";
 
 $lang['b_category_label_name'] = "name";
 $lang['b_category_label_created_at'] = "created_at";
+
+//List pages
+
+$lang['b_pages_label_title'] = "title";
+$lang['b_pages_label_code'] = "code";
+$lang['b_pages_label_description'] = "description";
+$lang['b_pages_label_meta_keywords'] = "meta_keywords";
+$lang['b_pages_label_meta_description'] = "meta_description";
+$lang['b_pages_label_meta_image'] = "meta_image";
+$lang['b_pages_label_created_at'] = "created_at";
