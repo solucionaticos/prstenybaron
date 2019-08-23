@@ -45,3 +45,7 @@ $lang['b_products_label_meta_keywords'] = "meta_keywords";
 $lang['b_products_label_meta_image'] = "meta_image";
 $lang['b_products_label_created_at'] = "created_at";
 
+//List Category
+
+$lang['b_category_label_name'] = "name";
+$lang['b_category_label_created_at'] = "created_at";
