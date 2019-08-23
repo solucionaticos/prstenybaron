@@ -21,14 +21,14 @@ class Category extends MY_Controller {
         $crud = new grocery_CRUD(); // Definicion del CRUD
         $crud->set_table("category"); // Tabla del Crud
         //-- Lista --------
-        $crud->columns("name","created_at");
+        $crud->columns($this->lang->line('b_category_label_name', FALSE),$this->lang->line('b_category_label_created_at', FALSE));
         //-- Nuevo --------
         $crud->add_fields("name");
         //-- Editar --------
         $crud->edit_fields("name");
         //-- Etiquetas --------
-        $crud->display_as("name","Name");
-        $crud->display_as("created_at","Created At");
+        $crud->display_as($this->lang->line('b_category_label_name', FALSE),"Name");
+        $crud->display_as($this->lang->line('b_category_label_created_at', FALSE),"Created At");
         //-- Tipos de Campos --------
         $crud->field_type("name", "string");
         $crud->field_type("created_at", "datetime");

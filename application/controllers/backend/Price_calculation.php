@@ -21,25 +21,25 @@ class Price_calculation extends MY_Controller {
         $crud = new grocery_CRUD(); // Definicion del CRUD
         $crud->set_table("price_calculation"); // Tabla del Crud
         //-- Lista --------
-        $crud->columns("name","email","telephone","type_male","type_female","size_male","size_female","type_stone","num_stone","material","color","notes","created_at");
+        $crud->columns($this->lang->line('b_price_calculations_label_name', FALSE),$this->lang->line('b_price_calculations_label_email', FALSE),$this->lang->line('b_price_calculations_label_telephone', FALSE),$this->lang->line('b_price_calculations_label_type_male', FALSE),$this->lang->line('b_price_calculations_label_type_female', FALSE),$this->lang->line('b_price_calculations_label_size_female', FALSE),$this->lang->line('b_price_calculations_label_size_female', FALSE),$this->lang->line('b_price_calculations_label_type_stone', FALSE),$this->lang->line('b_price_calculations_label_num_stone', FALSE),$this->lang->line('b_price_calculations_label_material', FALSE),$this->lang->line('b_price_calculations_label_color', FALSE),$this->lang->line('b_price_calculations_label_notes', FALSE), $this->lang->line('b_price_calculations_label_created_at', FALSE));
         //-- Nuevo --------
         $crud->add_fields("name","email","telephone","type_male","type_female","size_male","size_female","type_stone","num_stone","material","color","notes");
         //-- Editar --------
         $crud->edit_fields("name","email","telephone","type_male","type_female","size_male","size_female","type_stone","num_stone","material","color","notes");
         //-- Etiquetas --------
-        $crud->display_as("name","Name");
-        $crud->display_as("email","Email");
-        $crud->display_as("telephone","Telephone");
-        $crud->display_as("type_male","Type Male");
-        $crud->display_as("type_female","Type Female");
-        $crud->display_as("size_male","Size Male");
-        $crud->display_as("size_female","Size Female");
-        $crud->display_as("type_stone","Type Stone");
-        $crud->display_as("num_stone","Num Stone");
-        $crud->display_as("material","Material");
-        $crud->display_as("color","Color");
-        $crud->display_as("notes","Notes");
-        $crud->display_as("created_at","Created At");
+        $crud->display_as($this->lang->line('b_price_calculations_label_name', FALSE),"Name");
+        $crud->display_as($this->lang->line('b_price_calculations_label_email', FALSE),"Email");
+        $crud->display_as($this->lang->line('b_price_calculations_label_telephone', FALSE),"Telephone");
+        $crud->display_as($this->lang->line('b_price_calculations_label_type_male', FALSE),"Type Male");
+        $crud->display_as($this->lang->line('b_price_calculations_label_type_female', FALSE),"Type Female");
+        $crud->display_as($this->lang->line('b_price_calculations_label_size_male', FALSE),"Size Male");
+        $crud->display_as($this->lang->line('b_price_calculations_label_size_female', FALSE),"Size Female");
+        $crud->display_as($this->lang->line('b_price_calculations_label_type_stone', FALSE),"Type Stone");
+        $crud->display_as($this->lang->line('b_price_calculations_label_num_stone', FALSE),"Num Stone");
+        $crud->display_as($this->lang->line('b_price_calculations_label_material', FALSE),"Material");
+        $crud->display_as($this->lang->line('b_price_calculations_label_color', FALSE),"Color");
+        $crud->display_as($this->lang->line('b_price_calculations_label_notes', FALSE),"Notes");
+        $crud->display_as($this->lang->line('b_price_calculations_label_created_at', FALSE),"Created At");
         //-- Tipos de Campos --------
         $crud->field_type("name", "string");
         $crud->field_type("email", "string");

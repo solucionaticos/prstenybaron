@@ -45,3 +45,55 @@ $lang['b_products_label_meta_keywords'] = "meta_keywords";
 $lang['b_products_label_meta_image'] = "meta_image";
 $lang['b_products_label_created_at'] = "created_at";
 
+//List Category
+
+$lang['b_category_label_name'] = "name";
+$lang['b_category_label_created_at'] = "created_at";
+
+//List pages
+
+$lang['b_pages_label_title'] = "title";
+$lang['b_pages_label_code'] = "code";
+$lang['b_pages_label_description'] = "description";
+$lang['b_pages_label_meta_keywords'] = "meta_keywords";
+$lang['b_pages_label_meta_description'] = "meta_description";
+$lang['b_pages_label_meta_image'] = "meta_image";
+$lang['b_pages_label_created_at'] = "created_at";
+
+//list order
+
+$lang['b_orders_label_name'] = "name";
+$lang['b_orders_label_address'] = "address";
+$lang['b_orders_label_city'] = "city";
+$lang['b_orders_label_zip_code'] = "zip_code";
+$lang['b_orders_label_contact_telephone'] = "contact_telephone";
+$lang['b_orders_label_contact_email'] = "contact_email";
+$lang['b_orders_label_type_male'] = "type_male";
+$lang['b_orders_label_type_female'] = "type_female";
+$lang['b_orders_label_size_male'] = "size_male";
+$lang['b_orders_label_size_female'] = "size_female";
+$lang['b_orders_label_type_stone'] = "type_stone";
+$lang['b_orders_label_num_stone'] = "num_stone";
+$lang['b_orders_label_material'] = "material";
+$lang['b_orders_label_color'] = "color";
+$lang['b_orders_label_text_engraving_male'] = "text_engraving_male";
+$lang['b_orders_label_text_engraving_female'] = "text_engraving_female";
+$lang['b_orders_label_'] = "takeover_method";
+$lang['b_orders_label_notes'] = "notes";
+$lang['b_orders_label_created_at'] = "created_at";
+
+//list price calculation
+
+$lang['b_price_calculations_label_name'] = "name";
+$lang['b_price_calculations_label_email'] = "email";
+$lang['b_price_calculations_label_telephone'] = "telephone";
+$lang['b_price_calculations_label_type_male'] = "type_male";
+$lang['b_price_calculations_label_type_female'] = "type_female";
+$lang['b_price_calculations_label_size_male'] = "size_male";
+$lang['b_price_calculations_label_size_female'] = "size_female";
+$lang['b_price_calculations_label_type_stone'] = "type_stone";
+$lang['b_price_calculations_label_num_stone'] = "num_stone";
+$lang['b_price_calculations_label_material'] = "material";
+$lang['b_price_calculations_label_color'] = "color";
+$lang['b_price_calculations_label_notes'] = "notes";
+$lang['b_price_calculations_label_created_at'] = "created_at";
