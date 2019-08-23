@@ -97,3 +97,21 @@ $lang['b_price_calculations_label_material'] = "material";
 $lang['b_price_calculations_label_color'] = "color";
 $lang['b_price_calculations_label_notes'] = "notes";
 $lang['b_price_calculations_label_created_at'] = "created_at";
+
+//create settings
+$lang['b_settings_label_title'] = "title";
+$lang['b_settings_label_logo'] = "logo";
+$lang['b_settings_label_whatsapp'] = "whatsapp";
+$lang['b_settings_label_facebook'] = "facebook";
+$lang['b_settings_label_instagram'] = "instagram";
+$lang['b_settings_label_email'] = "email";
+$lang['b_settings_label_telephone'] = "telephone";
+$lang['b_settings_label_city'] = "city";
+$lang['b_settings_label_address_1'] = "address_1";
+$lang['b_settings_label_address_2'] = "address_2";
+$lang['b_settings_label_zip_code'] = "zip_code";
+$lang['b_settings_label_contact_name'] = "contact_name";
+$lang['b_settings_label_contact_identification'] = "contact_identification";
+$lang['b_settings_label_latitude'] = "latitude";
+$lang['b_settings_label_longitude'] = "longitude";
+

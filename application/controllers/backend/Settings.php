@@ -21,27 +21,27 @@ class Settings extends MY_Controller {
         $crud = new grocery_CRUD(); // Definicion del CRUD
         $crud->set_table("settings"); // Tabla del Crud
         //-- Lista --------
-        $crud->columns("title","logo","whatsapp","facebook","instagram","email","telephone","city","address_1","address_2","zip_code","contact_name","contact_identification","latitude","longitude");
+        $crud->columns($this->lang->line('b_settings_label_title', FALSE),$this->lang->line('b_settings_label_logo', FALSE),$this->lang->line('b_settings_label_whatsapp', FALSE),$this->lang->line('b_settings_label_facebook', FALSE),$this->lang->line('b_settings_label_instagram', FALSE),$this->lang->line('b_settings_label_email', FALSE),$this->lang->line('b_settings_label_telephone', FALSE),$this->lang->line('b_settings_label_city', FALSE),$this->lang->line('b_settings_label_address_1', FALSE),$this->lang->line('b_settings_label_address_2', FALSE),$this->lang->line('b_settings_label_zip_code', FALSE),$this->lang->line('b_settings_label_contact_name', FALSE),$this->lang->line('b_settings_label_contact_identification', FALSE),$this->lang->line('b_settings_label_latitude', FALSE),$this->lang->line('b_settings_label_longitude', FALSE));
         //-- Nuevo --------
         $crud->add_fields("title","logo","whatsapp","facebook","instagram","email","telephone","city","address_1","address_2","zip_code","contact_name","contact_identification","latitude","longitude");
         //-- Editar --------
         $crud->edit_fields("title","logo","whatsapp","facebook","instagram","email","telephone","city","address_1","address_2","zip_code","contact_name","contact_identification","latitude","longitude");
         //-- Etiquetas --------
-        $crud->display_as("title","Title");
-        $crud->display_as("logo","Logo");
-        $crud->display_as("whatsapp","Whatsapp");
-        $crud->display_as("facebook","Facebook");
-        $crud->display_as("instagram","Instagram");
-        $crud->display_as("email","Email");
-        $crud->display_as("telephone","Telephone");
-        $crud->display_as("city","City");
-        $crud->display_as("address_1","Address 1");
-        $crud->display_as("address_2","Address 2");
-        $crud->display_as("zip_code","Zip Code");
-        $crud->display_as("contact_name","Contact Name");
-        $crud->display_as("contact_identification","Contact Identification");
-        $crud->display_as("latitude","Latitude");
-        $crud->display_as("longitude","Longitude");
+        $crud->display_as($this->lang->line('b_settings_label_title', FALSE),"Title");
+        $crud->display_as($this->lang->line('b_settings_label_logo', FALSE),"Logo");
+        $crud->display_as($this->lang->line('b_settings_label_whatsapp', FALSE),"Whatsapp");
+        $crud->display_as($this->lang->line('b_settings_label_facebook', FALSE),"Facebook");
+        $crud->display_as($this->lang->line('b_settings_label_instagram', FALSE),"Instagram");
+        $crud->display_as($this->lang->line('b_settings_label_email', FALSE),"Email");
+        $crud->display_as($this->lang->line('b_settings_label_telephone', FALSE),"Telephone");
+        $crud->display_as($this->lang->line('b_settings_label_city', FALSE),"City");
+        $crud->display_as($this->lang->line('b_settings_label_address_1', FALSE),"Address 1");
+        $crud->display_as($this->lang->line('b_settings_label_address_2', FALSE),"Address 2");
+        $crud->display_as($this->lang->line('b_settings_label_zip_code', FALSE),"Zip Code");
+        $crud->display_as($this->lang->line('b_settings_label_contact_name', FALSE),"Contact Name");
+        $crud->display_as($this->lang->line('b_settings_label_contact_identification', FALSE),"Contact Identification");
+        $crud->display_as($this->lang->line('b_settings_label_contact_latitude', FALSE),"Latitude");
+        $crud->display_as($this->lang->line('b_settings_label_contact_longitude', FALSE),"Longitude");
 
         //-- Upload File --------
         $crud->set_field_upload("logo","assets/uploads/files/settings");
