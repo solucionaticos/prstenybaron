@@ -4,19 +4,23 @@
 		
 		<div class="container">
 
+
 			<div class="row pt15 pb15">
 				<div class="col-sm-12 text-center h1info">
 					<h1>{page_title}</h1>
 				</div>
 			</div>
+			<?php if ( trim($page_description) != '' ) { ?>
 			<div class="row">
-				<div class="col-sm-12 text-center pr15 pl15 pt15 pb15 info">
+				<div class="col-sm-12 text-justify pr15 pl15 pt15 pb15 info">
 					{page_description}
 				</div>
 			</div>
+			<?php } ?>
 			<div class="row m20">
 				<div class="col-sm-12"></div>
 			</div>
+
 
 		    <section class="mb50">
 
@@ -25,14 +29,10 @@
 						{products}
 		    			<div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3">
 		    				<div class="product">
-		    					<a href="#"><img class="img-fluid" src="<?php echo base_url(); ?>assets/uploads/files/products/{image}" alt="{name}"></a>
-								
-									<!-- <a href="#" class="add-to-cart text-center py-2 mr-1 btn btn-primary"><span>Vincular <i class="ion-ios-add ml-1"></i></span></a> -->
-									
-								
-                            	
+		    					<a href="{base_url}home/detail/{url}"><img class="img-fluid" src="{base_url}assets/uploads/files/products/{image}" alt="{name}"></a>
+
 								<div class="text-center">
-		    						<div class="prd-link"><a href="<?php echo  base_url().'home/detail/'.'{url}'?>">{name}</a></div>
+		    						<div class="prd-link"><a href="{base_url}home/detail/{url}">{name}</a></div>
 								</div>
 
 								<div style="background:white; text-align:center;">

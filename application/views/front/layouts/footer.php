@@ -2,20 +2,20 @@
 	<footer>
 		<div class="row m20">
 			<div class="col-md-4 pt15 pl15 pr15">
-				<ul>
+				<ul> <!-- active -->
 					<li>
-						<a class="active" href="#">Úvod</a>
+						<a class="{nav_footer_home}" href="{base_url}">Úvod</a>
 					</li>
 					<li>
-						<a href="#">O nás</a>
+						<a class="{nav_footer_about_us}" href="{base_url}o_nas">O nás</a>
 					</li>
 					<li>
 						<span>Katalog</span>
 						<ul>
-							<li><a href="#">Bílé zlato</a></li>
-							<li><a href="#">Kombinované zlato</a></li>
-							<li><a href="#">Žluté zlato</a></li>
-							<li><a href="#">Červené zlato</a></li>
+							<li><a class="{nav_footer_category_1}" href="{base_url}bile_zlato">Bílé zlato</a></li>
+							<li><a class="{nav_footer_category_2}" href="{base_url}kombinovane_zlato">Kombinované zlato</a></li>
+							<li><a class="{nav_footer_category_3}" href="{base_url}zlute_zlato">Žluté zlato</a></li>
+							<li><a class="{nav_footer_category_4}" href="{base_url}cervene_zlato">Červené zlato</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -24,16 +24,16 @@
 			<div class="col-md-4 pt15 pl15 pr15">
 				<ul>
 					<li>
-						<a href="#">Zlato</a>
+						<a class="{nav_footer_gold}" href="{base_url}zlato">Zlato</a>
 					</li> 
 					<li>
-						<a href="#">Kameny</a>
+						<a class="{nav_footer_stones}" href="{base_url}kameny">Kameny</a>
 					</li>
 					<li>
-						<a href="#">Důležité informace</a>
+						<a class="{nav_footer_important_information}" href="{base_url}dulezite_informace">Důležité informace</a>
 					</li>
 					<li>
-						<a href="#">Kontakt</a>
+						<a class="{nav_footer_contact}" href="{base_url}kontakt">Kontakt</a>
 					</li> 
 				</ul>
 			</div>

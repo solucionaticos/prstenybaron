@@ -51,6 +51,16 @@ defined('BASEPATH') OR exit('Přímý přístup k tomuto skriptu není povolen.'
 */
 $route['default_controller'] = 'home';
 $route['404_override'] = '';
-$route['(category)/(id)'] = 'home/category/$id';
-$route['contact'] = 'Home/contact';
+
+// $route['category/:id'] = 'home/category/$id';
+$route['bile_zlato'] = 'home/category/1';
+$route['kombinovane_zlato'] = 'home/category/2';
+$route['zlute_zlato'] = 'home/category/3';
+$route['cervene_zlato'] = 'home/category/4';
+
+$route['o_nas'] = 'home/about_us';
+$route['zlato'] = 'home/gold';
+$route['kameny'] = 'home/stones';
+$route['dulezite_informace'] = 'home/important_information';
+$route['kontakt'] = 'home/contact';
 $route['translate_uri_dashes'] = FALSE;

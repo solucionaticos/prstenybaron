@@ -21,11 +21,11 @@ class Settings extends MY_Controller {
         $crud = new grocery_CRUD(); // Definicion del CRUD
         $crud->set_table("settings"); // Tabla del Crud
         //-- Lista --------
-        $crud->columns("title","logo","whatsapp","facebook","instagram","email","telephone","city","zip_code","contact_name","contact_identification","latitude","longitude");
+        $crud->columns("title","logo","whatsapp","facebook","instagram","email","telephone","city","address_1","address_2","zip_code","contact_name","contact_identification","latitude","longitude");
         //-- Nuevo --------
-        $crud->add_fields("title","logo","whatsapp","facebook","instagram","email","telephone","city","zip_code","contact_name","contact_identification","latitude","longitude");
+        $crud->add_fields("title","logo","whatsapp","facebook","instagram","email","telephone","city","address_1","address_2","zip_code","contact_name","contact_identification","latitude","longitude");
         //-- Editar --------
-        $crud->edit_fields("title","logo","whatsapp","facebook","instagram","email","telephone","city","zip_code","contact_name","contact_identification","latitude","longitude");
+        $crud->edit_fields("title","logo","whatsapp","facebook","instagram","email","telephone","city","address_1","address_2","zip_code","contact_name","contact_identification","latitude","longitude");
         //-- Etiquetas --------
         $crud->display_as("title","Title");
         $crud->display_as("logo","Logo");
@@ -35,6 +35,8 @@ class Settings extends MY_Controller {
         $crud->display_as("email","Email");
         $crud->display_as("telephone","Telephone");
         $crud->display_as("city","City");
+        $crud->display_as("address_1","Address 1");
+        $crud->display_as("address_2","Address 2");
         $crud->display_as("zip_code","Zip Code");
         $crud->display_as("contact_name","Contact Name");
         $crud->display_as("contact_identification","Contact Identification");
@@ -53,6 +55,8 @@ class Settings extends MY_Controller {
         $crud->field_type("email", "string");
         $crud->field_type("telephone", "string");
         $crud->field_type("city", "string");
+        $crud->field_type("address_1", "string");
+        $crud->field_type("address_2", "string");
         $crud->field_type("zip_code", "string");
         $crud->field_type("contact_name", "string");
         $crud->field_type("contact_identification", "string");

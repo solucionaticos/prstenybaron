@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/front/global/view.css">
+	<link rel="stylesheet" href="{base_url}assets/css/front/global/view.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -15,21 +15,18 @@
 
 </head>
 <body>
-<style>
-body {overflow-x:hidden;}
-</style>
 	<header>
 
 		<div class="row pt15">
 			<div class="col-md-4 d-none d-md-block"></div>
 			<div class="col-md-4 text-center d-none d-md-block">
-				<a class="navbar-brand d-none d-md-block" href="/">
-					<img src="<?php echo base_url(); ?>assets/images/logo.png" width="200">
+				<a class="navbar-brand d-none d-md-block" href="{base_url}">
+					<img src="{base_url}assets/images/logo.png" width="200">
 				</a>
 			</div>			
 			<div class="col-md-4 text-right nowrap pr3p pt15 d-none d-md-block">
-				<a href="{facebook_url}" target="_blank"><img src="<?php echo base_url(); ?>assets/images/icons/facebook.png" width="45" border="0"></a>
-				<a href="{instagram_url}" target="_blank"><img src="<?php echo base_url(); ?>assets/images/icons/instagram.png" width="45" border="0"></a>
+				<a href="{facebook_url}" target="_blank"><img src="{base_url}assets/images/icons/facebook.png" width="45" border="0"></a>
+				<a href="{instagram_url}" target="_blank"><img src="{base_url}assets/images/icons/instagram.png" width="45" border="0"></a>
 			</div>
 		</div>
 
@@ -38,13 +35,13 @@ body {overflow-x:hidden;}
 			<div class="wlogofip d-md-none">
 				<div class="row">
 					<div class="col">
-						<a class="navbar-brand" href="/">
-							<img src="<?php echo base_url(); ?>assets/images/logo.png" width="90">
+						<a class="navbar-brand" href="{base_url}">
+							<img src="{base_url}assets/images/logo.png" width="90">
 						</a>
 					</div>
 					<div class="col text-right">
-						<a href="{facebook_url}" target="_blank"><img src="<?php echo base_url(); ?>assets/images/icons/facebook.png" width="40" border="0"></a>
-						<a href="{instagram_url}" target="_blank"><img src="<?php echo base_url(); ?>assets/images/icons/instagram.png" width="40" border="0"></a>
+						<a href="{facebook_url}" target="_blank"><img src="{base_url}assets/images/icons/facebook.png" width="40" border="0"></a>
+						<a href="{instagram_url}" target="_blank"><img src="{base_url}assets/images/icons/instagram.png" width="40" border="0"></a>
 					</div>
 				</div>
 			</div>
@@ -56,41 +53,41 @@ body {overflow-x:hidden;}
 
 			<!-- Navbar links -->
 			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav"> <!-- nav-link-active -->
 					<li class="nav-item">
-						<a class="nav-link nav-link-active" href="#">Úvod</a>
+						<a class="nav-link {nav_header_home}" href="{base_url}">Úvod</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="<?php echo  base_url().'Home/category/'.'0'?>">O nás</a>
+						<a class="nav-link {nav_header_about_us}" href="{base_url}o_nas">O nás</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 							Katalog
 						</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item dropdown-item-active" href="<?php echo  base_url().'Home/category/'.'0'?>">Bílé zlato</a>
-							<a class="dropdown-item " href="<?php echo  base_url().'Home/category/'.'1'?>">Kombinované zlato</a>
-							<a class="dropdown-item" href="<?php echo  base_url().'Home/category/'.'2'?>">Žluté zlato</a>
-							<a class="dropdown-item" href="<?php echo  base_url().'Home/category/'.'3'?>">Červené zlato</a>
+						<div class="dropdown-menu"> <!-- dropdown-item-active -->
+							<a class="dropdown-item {nav_header_category_1}" href="{base_url}bile_zlato">Bílé zlato</a>
+							<a class="dropdown-item {nav_header_category_2}" href="{base_url}kombinovane_zlato">Kombinované zlato</a>
+							<a class="dropdown-item {nav_header_category_3}" href="{base_url}zlute_zlato">Žluté zlato</a>
+							<a class="dropdown-item {nav_header_category_4}" href="{base_url}cervene_zlato">Červené zlato</a>
 						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="<?php echo  base_url().'Home/category/'.'0'?>">Zlato</a>
+						<a class="nav-link {nav_header_gold}" href="{base_url}zlato">Zlato</a>
 					</li> 
 				</ul>
 
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Kameny</a>
+						<a class="nav-link {nav_header_stones}" href="{base_url}kameny">Kameny</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<span class="d-md-none d-lg-block">Důležité informace</span>
-							<span class="d-none d-md-block d-lg-none">Důležité info.</span>
+						<a class="nav-link" href="{base_url}dulezite_informace">
+							<span class="d-md-none d-lg-block {nav_header_important_information}">Důležité informace</span>
+							<span class="d-none d-md-block d-lg-none {nav_header_important_information}">Důležité info.</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="<?php echo  base_url('contact')?>">Kontakt</a>
+						<a class="nav-link {nav_header_contact}" href="{base_url}kontakt">Kontakt</a>
 					</li> 
 				</ul>
 

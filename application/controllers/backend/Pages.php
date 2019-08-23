@@ -21,13 +21,14 @@ class Pages extends MY_Controller {
         $crud = new grocery_CRUD(); // Definicion del CRUD
         $crud->set_table("pages"); // Tabla del Crud
         //-- Lista --------
-        $crud->columns("title","meta_keywords","meta_image","created_at");
+        $crud->columns("title","code","meta_keywords","meta_image","created_at");
         //-- Nuevo --------
-        $crud->add_fields("title","description","meta_keywords","meta_description","meta_image");
+        $crud->add_fields("title","code","description","meta_keywords","meta_description","meta_image");
         //-- Editar --------
-        $crud->edit_fields("title","description","meta_keywords","meta_description","meta_image");
+        $crud->edit_fields("title","code","description","meta_keywords","meta_description","meta_image");
         //-- Etiquetas --------
         $crud->display_as("title","Title");
+        $crud->display_as("code","Code");
         $crud->display_as("description","Description");
         $crud->display_as("meta_keywords","Meta Keywords");
         $crud->display_as("meta_description","Meta Description");
@@ -39,14 +40,12 @@ class Pages extends MY_Controller {
 
         //-- Tipos de Campos --------
         $crud->field_type("title", "string");
+        $crud->field_type("code", "string");
         $crud->field_type("description", "text");
         $crud->field_type("meta_keywords", "string");
         $crud->field_type("meta_description", "text");
         //$crud->field_type("meta_image", "string");
         $crud->field_type("created_at", "datetime");
-
-
-
 
         //-- Metodos (Antes de...)
         $crud->callback_before_insert(array($this, "pages_before_insert"));
