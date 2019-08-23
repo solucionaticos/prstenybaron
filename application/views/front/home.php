@@ -10,9 +10,9 @@
 					<h1>{page_title}</h1>
 				</div>
 			</div>
-			<?php if ( false ) { ?>
+			<?php if ( trim($page_description) != '' ) { ?>
 			<div class="row">
-				<div class="col-sm-12 text-justify pr15 pl15 pt15 pb15 info">
+				<div class="col-sm-12 text-justify pr15 pl15 pt15 pb15">
 					{page_description}
 				</div>
 			</div>
