@@ -81,3 +81,19 @@ $lang['b_orders_label_text_engraving_female'] = "text_engraving_female";
 $lang['b_orders_label_'] = "takeover_method";
 $lang['b_orders_label_notes'] = "notes";
 $lang['b_orders_label_created_at'] = "created_at";
+
+//list price calculation
+
+$lang['b_price_calculations_label_name'] = "name";
+$lang['b_price_calculations_label_email'] = "email";
+$lang['b_price_calculations_label_telephone'] = "telephone";
+$lang['b_price_calculations_label_type_male'] = "type_male";
+$lang['b_price_calculations_label_type_female'] = "type_female";
+$lang['b_price_calculations_label_size_male'] = "size_male";
+$lang['b_price_calculations_label_size_female'] = "size_female";
+$lang['b_price_calculations_label_type_stone'] = "type_stone";
+$lang['b_price_calculations_label_num_stone'] = "num_stone";
+$lang['b_price_calculations_label_material'] = "material";
+$lang['b_price_calculations_label_color'] = "color";
+$lang['b_price_calculations_label_notes'] = "notes";
+$lang['b_price_calculations_label_created_at'] = "created_at";
