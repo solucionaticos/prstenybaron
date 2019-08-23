@@ -32,7 +32,16 @@ $lang['b_menu_categories_link'] = "Categories";
 $lang['b_products_label_image'] = "Image";
 $lang['b_products_label_created_at'] = "Created at";
 
-//product
+//List Product 
 $lang['b_products_label_name'] = "name";
-
+$lang['b_products_label_url'] = "url";
+$lang['b_products_label_category_id'] = "category_id";
+$lang['b_products_label_image'] = "image";
+$lang['b_products_label_material'] = "material";
+$lang['b_products_label_width'] = "width";
+$lang['b_products_label_price_size'] = "price_size";
+$lang['b_products_label_price_brillants'] = "price_brillants";
+$lang['b_products_label_meta_keywords'] = "meta_keywords";
+$lang['b_products_label_meta_image'] = "meta_image";
+$lang['b_products_label_created_at'] = "created_at";
 

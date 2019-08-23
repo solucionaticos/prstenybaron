@@ -25,25 +25,25 @@ class Product extends MY_Controller {
         $crud->order_by('id','desc');
 
         //-- Lista --------
-        $crud->columns($this->lang->line('b_products_label_name', FALSE),"url","category_id","image","material","width","price_size","price_brillants","meta_keywords","meta_image","created_at");
+        $crud->columns($this->lang->line('b_products_label_name', FALSE), $this->lang->line('b_products_label_url', FALSE),$this->lang->line('b_products_label_category_id', FALSE),$this->lang->line('b_products_label_image', FALSE), $this->lang->line('b_products_label_material', FALSE),$this->lang->line('b_products_label_width', FALSE),$this->lang->line('b_products_label_price_size', FALSE),$this->lang->line('b_products_label_price_brillants', FALSE),$this->lang->line('b_products_label_meta_keywords', FALSE),$this->lang->line('b_products_label_meta_image', FALSE),$this->lang->line('b_products_label_created_at', FALSE));
         //-- Nuevo --------
         $crud->add_fields("name","url","description","category_id","image","material","width","price_size","price_brillants","meta_keywords","meta_description","meta_image");
         //-- Editar --------
         $crud->edit_fields("name","url","description","category_id","image","material","width","price_size","price_brillants","meta_keywords","meta_description","meta_image");
         //-- Etiquetas --------
-        $crud->display_as("name","Name");
-        $crud->display_as("url","Url");
+        $crud->display_as($this->lang->line('b_products_label_name', FALSE),"Name");
+        $crud->display_as($this->lang->line('b_products_label_url', FALSE),"Url");
         $crud->display_as("description","Description");
-        $crud->display_as("category_id","Category");
-        $crud->display_as("image","Image");
-        $crud->display_as("material","Material");
-        $crud->display_as("width","Width");
-        $crud->display_as("price_size","Price Size");
-        $crud->display_as("price_brillants","Price Brillants");
-        $crud->display_as("meta_keywords","Meta Keywords");
-        $crud->display_as("meta_description","Meta Description");
-        $crud->display_as("meta_image","Meta Image");
-        $crud->display_as("created_at","Created At");
+        $crud->display_as($this->lang->line('b_products_label_category_id', FALSE),"Category");
+        $crud->display_as($this->lang->line('b_products_label_image', FALSE),"Image");
+        $crud->display_as($this->lang->line('b_products_label_material', FALSE),"Material");
+        $crud->display_as($this->lang->line('b_products_label_width', FALSE),"Width");
+        $crud->display_as($this->lang->line('b_products_label_price_size', FALSE),"Price Size");
+        $crud->display_as($this->lang->line('b_products_label_price_brillants', FALSE),"Price Brillants");
+        $crud->display_as($this->lang->line('b_products_label_meta_keywords', FALSE),"Meta Keywords");
+        $crud->display_as($this->lang->line('b_products_label_meta_description', FALSE),"Meta Description");
+        $crud->display_as($this->lang->line('b_products_label_meta_image', FALSE),"Meta Image");
+        $crud->display_as($this->lang->line('b_products_label_created_at', FALSE),"Created At");
 
         //-- Upload File --------
         $crud->set_field_upload("image","assets/uploads/files/products");
