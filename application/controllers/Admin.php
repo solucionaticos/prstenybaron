@@ -19,7 +19,7 @@ class Admin extends MY_Controller {
 			$msg = '<div class="alert alert-' . $this->session->flashdata('alertType') . ' alert-dismissible"><button type="button" class="close" data-dismiss="alert">&times;</button>' . $this->session->flashdata('alertMessage') . '</div>';
 		}
 		$recaptcha = '';
-		if (ENVIRONMENT === 'production') {
+		if (ENVIRONMENT === 'production2') {
 			$recaptcha = '<center><div class="g-recaptcha" data-sitekey="' . $this->config->item('recaptcha_sitekey') . '"></div><br></center>';
 		}
 		$data = array(
@@ -40,7 +40,7 @@ class Admin extends MY_Controller {
 				$post[$key] = $this->security->xss_clean($value);
 			}
 
-			if (ENVIRONMENT === 'production') {
+			if (ENVIRONMENT === 'production2') {
 				$recaptcha = $post['g-recaptcha-response'];
 				if ($recaptcha != '') {
 					$secret = $this->config->item('recaptcha_secret');

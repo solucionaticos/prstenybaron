@@ -26,8 +26,8 @@ defined('BASEPATH') OR exit('Přímý přístup k tomuto skriptu není povolen.'
 if (ENVIRONMENT === 'production') {
     $config['base_url'] = 'https://prstenybaron.cf/';
 } else {
-    // $config['base_url'] = 'http://localhost:8888/anillos/prstenybaron';
-    $config['base_url'] = 'http://localhost:8081/prstenybaron/';
+    $config['base_url'] = 'http://localhost:8888/anillos/prstenybaron';
+    // $config['base_url'] = 'http://localhost:8081/prstenybaron/';
 }
 /*
 |--------------------------------------------------------------------------
