@@ -19,15 +19,22 @@
 body {overflow-x:hidden;}
 </style>
 	<header>
-		<div class="row d-none d-md-block">
-			<div class="col-xl-12 text-right nowrap pr3p pt15">
+
+		<div class="row pt15">
+			<div class="col-md-4 d-none d-md-block"></div>
+			<div class="col-md-4 text-center d-none d-md-block">
+				<a class="navbar-brand d-none d-md-block" href="/">
+					<img src="<?php echo base_url(); ?>assets/images/logo.png" width="200">
+				</a>
+			</div>			
+			<div class="col-md-4 text-right nowrap pr3p pt15 d-none d-md-block">
 				<a href="{facebook_url}" target="_blank"><img src="<?php echo base_url(); ?>assets/images/icons/facebook.png" width="45" border="0"></a>
 				<a href="{instagram_url}" target="_blank"><img src="<?php echo base_url(); ?>assets/images/icons/instagram.png" width="45" border="0"></a>
 			</div>
 		</div>
 
-		<nav class="navbar navbar-expand-md bg-light navbar-light">
 
+		<nav class="navbar navbar-expand-md bg-light navbar-light">
 			<div class="wlogofip d-md-none">
 				<div class="row">
 					<div class="col">
@@ -72,18 +79,15 @@ body {overflow-x:hidden;}
 					</li> 
 				</ul>
 
-				<div class="w100p text-center">
-					<a class="navbar-brand d-none d-md-block" href="/">
-						<img src="<?php echo base_url(); ?>assets/images/logo.png" width="200">
-					</a>
-				</div>
-
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
 						<a class="nav-link" href="#">Kameny</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Důležité informace</a>
+						<a class="nav-link" href="#">
+							<span class="d-md-none d-lg-block">Důležité informace</span>
+							<span class="d-none d-md-block d-lg-none">Důležité info.</span>
+						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="<?php echo  base_url('contact')?>">Kontakt</a>

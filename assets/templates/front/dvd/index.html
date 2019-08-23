@@ -21,8 +21,14 @@
 <body>
 
 	<header>
-		<div class="row d-none d-md-block">
-			<div class="col-xl-12 text-right nowrap pr3p pt15">
+		<div class="row" style="padding-top: 20px">
+			<div class="col-md-4 d-none d-md-block"></div>
+			<div class="col-md-4 text-center d-none d-md-block">
+				<a class="navbar-brand d-none d-md-block" href="/">
+					<img src="images/logo.png" width="200">
+				</a>
+			</div>			
+			<div class="col-md-4 text-right nowrap pr3p pt15 d-none d-md-block">
 				<img src="images/icons/facebook.png" width="45">
 				<img src="images/icons/instagram.png" width="45">
 			</div>
@@ -73,19 +79,16 @@
 						<a class="nav-link" href="#">Zlato</a>
 					</li> 
 				</ul>
-<!--
-				<div class="w100p text-center">
-					<a class="navbar-brand d-none d-md-block" href="/">
-						<img src="images/logo.png" width="200">
-					</a>
-				</div>
--->
+
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
 						<a class="nav-link" href="#">Kameny</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Důležité informace</a>
+						<a class="nav-link" href="#">
+							<span class="d-md-none d-lg-block">Důležité informace</span>
+							<span class="d-none d-md-block d-lg-none">Důležité info.</span>
+						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Kontakt</a>

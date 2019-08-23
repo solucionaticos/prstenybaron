@@ -21,10 +21,16 @@ header {
     width: 100%;
 }
 .nav-item {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-    text-transform: uppercase;
-    white-space: nowrap;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+@media (max-width: 840px) {
+  .nav-item {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
 .nowrap {
     white-space: nowrap;
