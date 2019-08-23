@@ -66,7 +66,7 @@ class Price_calculation extends MY_Controller {
         $crud->callback_after_delete(array($this, "price_calculation_after_delete"));
 
         $crudTabla = $crud->render(); // Render del Crud
-        $this->crudShow($crudTabla, "Price Calculations", '', '', '', '', '', 0, '', '2_2'); //
+        $this->crudShow($crudTabla, "Price Calculations", '', '', '', '', '', 0, '', '3_2'); //
 
     }
 

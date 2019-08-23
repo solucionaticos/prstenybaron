@@ -1,9 +1,9 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-$menu_open_1 = $menu_open_2 = $menu_open_3 = '';
-$display_block_1 = $display_block_2 = $display_block_3 = '';
-$text_yellow_1_0 = $text_yellow_2_0 = $text_yellow_3_0 = '';
-$yellow_1_1 = $yellow_1_2 = $yellow_2_1 = $yellow_2_2 = $yellow_3_1 = $yellow_3_2 = 'green';
+$menu_open_1 = $menu_open_3 = '';
+$display_block_1 = $display_block_3 = '';
+$text_yellow_1_0 = $text_yellow_2_0 = $text_yellow_3_0 = $text_yellow_4_0 = '';
+$yellow_1_1 = $yellow_1_2 = $yellow_3_1 = $yellow_3_2 = 'green';
 
 switch ($menu) {
   case '1_1':
@@ -18,18 +18,11 @@ switch ($menu) {
     $text_yellow_1_0 = 'text-yellow';
     $yellow_1_2 = 'yellow';
     break;
-  case '2_1':
-    $menu_open_2 = 'menu-open';
-    $display_block_2 = 'style="display: block;"';
+
+  case '2_0':
     $text_yellow_2_0 = 'text-yellow';
-    $yellow_2_1 = 'yellow';
     break;
-  case '2_2':
-    $menu_open_2 = 'menu-open';
-    $display_block_2 = 'style="display: block;"';
-    $text_yellow_2_0 = 'text-yellow';
-    $yellow_2_2 = 'yellow';
-    break;
+
   case '3_1':
     $menu_open_3 = 'menu-open';
     $display_block_3 = 'style="display: block;"';
@@ -41,6 +34,10 @@ switch ($menu) {
     $display_block_3 = 'style="display: block;"';
     $text_yellow_3_0 = 'text-yellow';
     $yellow_3_2 = 'yellow';
+    break;
+
+  case '4_0':
+    $text_yellow_4_0 = 'text-yellow';
     break;
 
   default:
@@ -165,35 +162,29 @@ switch ($menu) {
 
         </li>
 
-        <li class="treeview <?php echo $menu_open_2; ?>">
-          <a href="#">
-            <i class="fa fa-edit <?php echo $text_yellow_2_0; ?>"></i> <span>Data</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu" <?php echo $display_block_2; ?>>
-            <li><a href='<?php echo base_url(); ?>backend/order'><i class='fa fa-circle-o text-<?php echo $yellow_2_1; ?>'></i> <span>Orders</span></a></li>
-            <li><a href='<?php echo base_url(); ?>backend/price_calculation'><i class='fa fa-circle-o text-<?php echo $yellow_2_2; ?>'></i> <span>Price Calculation</span></a></li>
-          </ul>
-        </li>
+
+        <li><a href='<?php echo base_url(); ?>backend/pages'><i class='fa fa-th <?php echo $text_yellow_2_0; ?>'></i> <span>Pages</span></a></li>
+
 
         <li class="treeview <?php echo $menu_open_3; ?>">
           <a href="#">
-            <i class="fa fa-cog <?php echo $text_yellow_3_0; ?>"></i> <span>Settings</span>
+            <i class="fa fa-edit <?php echo $text_yellow_3_0; ?>"></i> <span>Forms</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu" <?php echo $display_block_3; ?>>
 
-            <li><a href='<?php echo base_url(); ?>backend/settings/index/edit/1'><i class='fa fa-circle-o text-<?php echo $yellow_3_1; ?>'></i> <span>Settings</span></a></li>
+            <li><a href='<?php echo base_url(); ?>backend/order'><i class='fa fa-circle-o text-<?php echo $yellow_3_1; ?>'></i> <span>Orders</span></a></li>
 
-            <li><a href='<?php echo base_url(); ?>backend/pages'><i class='fa fa-circle-o text-<?php echo $yellow_3_2; ?>'></i> <span>Pages</span></a></li>
+            <li><a href='<?php echo base_url(); ?>backend/price_calculation'><i class='fa fa-circle-o text-<?php echo $yellow_3_2; ?>'></i> <span>Price Calculations</span></a></li>
 
           </ul>
 
         </li>
+
+        <li><a href='<?php echo base_url(); ?>backend/settings/index/edit/1'><i class='fa fa-cog <?php echo $text_yellow_4_0; ?>'></i> <span>Settings</span></a></li>
+
 
       </ul>
     </section>

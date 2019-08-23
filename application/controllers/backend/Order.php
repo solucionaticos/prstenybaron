@@ -81,7 +81,7 @@ class Order extends MY_Controller {
         $crud->callback_after_delete(array($this, "order_after_delete"));
 
         $crudTabla = $crud->render(); // Render del Crud
-        $this->crudShow($crudTabla, "Order", '', '', '', '', '', 0, '', '2_1'); //
+        $this->crudShow($crudTabla, "Order", '', '', '', '', '', 0, '', '3_1'); //
     }
 
     //-- Antes de Insertar --------

@@ -59,7 +59,7 @@ class Pages extends MY_Controller {
         $crud->callback_after_delete(array($this, "pages_after_delete"));
 
         $crudTabla = $crud->render(); // Render del Crud
-        $this->crudShow($crudTabla, "Pages", '', '', '', '', '', 0, '', '3_2'); //
+        $this->crudShow($crudTabla, "Pages", '', '', '', '', '', 0, '', '2_0'); //
 
     }
 

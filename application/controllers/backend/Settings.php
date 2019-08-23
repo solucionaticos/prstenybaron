@@ -70,7 +70,7 @@ class Settings extends MY_Controller {
         $crud->callback_after_delete(array($this, "settings_after_delete"));
 
         $crudTabla = $crud->render(); // Render del Crud
-        $this->crudShow($crudTabla, "Settings", '', '', '', '', '', 0, '', '3_1'); //
+        $this->crudShow($crudTabla, "Settings", '', '', '', '', '', 0, '', '4_0'); //
     }
 
     //-- Antes de Insertar --------
