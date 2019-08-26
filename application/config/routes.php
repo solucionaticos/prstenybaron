@@ -64,3 +64,6 @@ $route['kameny'] = 'home/stones';
 $route['dulezite_informace'] = 'home/important_information';
 $route['kontakt'] = 'home/contact';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['save_order'] = 'home/order';
+$route['calculation'] = 'home/calculation';
