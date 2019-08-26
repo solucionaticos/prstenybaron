@@ -21,7 +21,62 @@ class Home extends MY_Controller {
 		$this->_load_work_area_general('front/home', $nav, $page->title, $page->description);
 
 	}
+	
+	public function order()
+	{
+		
+		$post = $this->input->post(NULL, TRUE);
+		$data = array(
+			'name'              =>$post['name'], 
+			'address'           =>$post['address'],
+			'city'              =>$post['city'],
+			'zip_code'          =>$post['zip_code'],
+			'contact_telephone' =>$post['contact_telephone'],
+			'contact_email'     =>$post['contact_email'],
+			'type_male'         =>$post['type_male'],
+			'type_female'       =>$post['type_female'],
+			'size_male'         =>$post['size_male'],
+			'size_female'       =>$post['size_female'],
+			'type_stone'        =>$post['type_stone'],
+			'num_stone'         =>$post['num_stone'],
+			'material'          =>$post['material'],
+			'color'             =>$post['color'],
+			'text_engraving_male'=>$post['text_engraving_male'],
+			'text_engraving_female'=>$post['text_engraving_female'],
+			'takeover_method'   =>$post['takeover_method'],
+			'notes'             =>$post['notes']
+		);
 
+		$this->Model->insert('order', $data);
+
+
+	}
+	public function calculation()
+	{
+		
+		$post = $this->input->post(NULL, TRUE);
+		$data = array(
+			'name'              =>$post['name'], 
+			'email'             =>$post['email'],
+			'telephone'         =>$post['telephone'],
+			'type_male'         =>$post['type_male'],
+			'type_female'       =>$post['type_female'],
+			'size_male'         =>$post['size_male'],
+			'size_female'       =>$post['size_female'],
+			'type_stone'        =>$post['type_stone'],
+			'num_stone'         =>$post['num_stone'],
+			'material'          =>$post['material'],
+			'color'             =>$post['color'],
+			'notes'             =>$post['notes'],
+			
+		);
+
+		$this->Model->insert('price_calculation', $data);
+
+
+	}
+	
+	
 	public function about_us() {
 
 		$page = $this->Model->getRow('pages', 'o_nas', 'code'); 
