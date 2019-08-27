@@ -51,7 +51,7 @@ class Price_calculation extends MY_Controller {
         $crud->field_type('type_stone','dropdown', array('1' => 'Zirkon', '2' => 'Brillant'));
         $crud->field_type("num_stone", "string");
         $crud->field_type("material", "dropdown", array('1' => 'Zlato 14 kt', '2' => 'Stříbro'));
-        $crud->field_type("color", "dropdown", array('1' => 'Bílé', '2' => 'Žluté', '2' => 'Červené'));
+        $crud->field_type("color", "dropdown", array('1' => 'Bílé', '2' => 'Žluté', '3' => 'Červené'));
         $crud->field_type("notes", "text");
         $crud->field_type("created_at", "datetime");
 

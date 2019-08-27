@@ -61,7 +61,7 @@ class Order extends MY_Controller {
 
         $crud->field_type("num_stone", "string");
         $crud->field_type("material", "dropdown", array('1' => 'Zlato 14 kt', '2' => 'Stříbro'));
-        $crud->field_type("color", "dropdown", array('1' => 'Bílé', '2' => 'Žluté', '2' => 'Červené'));
+        $crud->field_type("color", "dropdown", array('1' => 'Bílé', '2' => 'Žluté', '3' => 'Červené'));
 
         $crud->field_type("text_engraving_male", "string");
         $crud->field_type("text_engraving_female", "string");

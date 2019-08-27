@@ -56,7 +56,11 @@
                 </div>
 
                 <hr class="m-t-30 m-b-30">
+
+
                 <div class="container">
+                    
+
 
                     <button type="button" class="buy-now text-center py-2 btn btn-light btn-sm" data-toggle="modal" data-target="#orderModal">OBJEDNÁVKOVÝ FORMULÁR
                     </button>
@@ -118,151 +122,194 @@
       </div>
       <div class="container">
             <div class="modal-body">
-                <form id="form_order" name="form_order">
-          <label for="inputEmail4">NEZÁVAZNÝ VÝPOčET CENY</label>
 
-          <div class="form-group">
-            <label for="usr">jméno a příjmení:</label>
-            <input type="text" class="form-control" id="name" name="name">
-          </div>
+              <form id="form_order" method="post" class="form-horizontal">
+                    <label for="inputEmail4">NEZÁVAZNÝ VÝPOčET CENY</label>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Jméno a příjmení:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="name" />
+                        </div>
+                    </div>
 
-          <div class="form-group">
-            <label for="usr">ulice:</label>
-            <input type="text" class="form-control" id="address" name="address">
-          </div>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Ulice:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="address" />
+                        </div>
+                    </div>
 
-          <div class="form-group">
-            <label for="usr">město:</label>
-            <input type="text" class="form-control" id="city" name="city">
-          </div>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Město:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="city" />
+                        </div>
+                    </div>
 
-          <div class="form-group">
-            <label for="usr">PSČ:</label>
-            <input type="text" class="form-control" id="zip_code" name="zip_code">
-          </div>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">PSČ:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="zip_code" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Kontaktní telefon::</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="contact_telephone" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">kontaktní e-mail:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="contact_email" />
+                        </div>
+                    </div>
+                    <label for="inputEmail4">TYP PRSTENU</label>
 
-          <div class="form-group">
-            <label for="usr">kontaktní telefon:</label>
-            <input type="text" class="form-control" id="contact_telephone" name="contact_telephone">
-          </div>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Dámský:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="type_male" />
+                        </div>
+                    </div>
 
-          <div class="form-group">
-            <label for="usr">kontaktní e-mail:</label>
-            <input type="text" class="form-control" id="contact_email" name="contact_email">
-          </div>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Pánský:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="type_female" />
+                        </div>
+                    </div>
+                     <label for="inputEmail4">VELIKOST PRSTENU</label>
+                     <div class="form-group">
+                        <label class="col-sm-6 control-label">Dámský:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="size_male" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">pánský:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="size_female" />
+                        </div>
+                    </div>
+                    <label for="inputEmail4">TYP KAMENE</label> 
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Dámský:</label>
+                        <div class="col-sm-12">
+                             <div class="radio">
+                                <label>
+                                    <input type="radio" name="type_stone" value="1" checked/> zirkon
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="type_stone" value="2" /> briliant
+                                </label>
+                            </div>
 
-          <label for="inputEmail4">TYP PRSTENU</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Počet kamenů::</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="num_stone" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">MATERIÁL:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="num_stone" />
+                        </div>
+                    </div>
+                     <label for="inputEmail4">MATERIÁL</label>  
+                     <div class="col-sm-12">
+                             <div class="radio">
+                                <label>
+                                    <input type="radio" name="material" value="1" checked/> Zlato 14kt
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="material" value="2" /> stříbro
+                                </label>
+                            </div>
 
-          <div class="form-group">
-            <label for="usr">dámský:</label>
-            <input type="text" class="form-control" id="type_male" name="type_male">
-          </div>
-          <div class="form-group">
-            <label for="usr">pánský:</label>
-            <input type="text" class="form-control" id="type_female" name="type_female">
-          </div>
+                        </div>
 
-          <label for="inputEmail4">VELIKOST PRSTENU</label>
+                        <label for="inputEmail4">ZLATO, BARVA</label>  
+                     <div class="col-sm-12">
+                             <div class="radio">
+                                <label>
+                                    <input type="radio" name="color" value="1" /> bílé 
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="color" value="2" /> žluté
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="color" value="3"  checked/> červené
+                                </label>
+                            </div>
 
-          <div class="form-group">
-            <label for="usr">dámský:</label>
-            <input type="text" class="form-control" id="size_male" name="size_male">
-          </div>
-          <div class="form-group">
-            <label for="usr">pánský:</label>
-            <input type="text" class="form-control" id="size_female" name="size_female">
-          </div>
-                   
-          
-          <label for="inputEmail4">TYP KAMENE</label>  
-          <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="type_stone" name="type_stone" value="zirkon">zirkon
+                        </div>
+                    <label for="inputEmail4"> TEXT RYTINY DO PRSTENU</label>  
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Dámský:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="text_engraving_female" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">ZPůSOB PřEVZTÍ:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="text_engraving_male" />
+                        </div>
+                    </div>
 
-            </label>
-          </div>
-          <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="type_stone" name="type_stone" value="briliant">briliant
-              </label>
-          </div>
-          <div class="form-group">
-            <label for="usr">počet kamenů:</label>
-            <input type="text" class="form-control" id="num_stone" name="num_stone">
-          </div>
-          <br/>
-          <label for="inputEmail4">MATERIÁL</label>  
-          <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="material" name="material" >zlato 14kt
+                    <label for="inputEmail4">ZPůSOB PřEVZTÍ</label>  
+                     <div class="col-sm-12">
+                             <div class="radio">
+                                <label>
+                                    <input type="radio" name="takeover_method" value="bílé" checked /> Česká pošta dobírka 
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="takeover_method" value="osobně na adrese provozovny" /> osobně na adrese provozovny
+                                </label>
+                            </div>
+                          
+                        </div>
+                        <label for="inputEmail4"> Objednávka telefonicky: 732 450 054</label> 
+                      <div class="form-group">
+                        <label class="col-sm-12 control-label">Vaše poznámky, vlastní úpravy:</label>
+                        <div class="col-sm-12">
+                             <textarea class="form-control" id="notes" name="notes"></textarea>
+                        </div>
+                    </div>
 
-            </label>
-          </div>
-          <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="material" name="material">stříbro
-              </label>
-          </div>
-          
-          <br/>
-          <label for="inputEmail4"> ZLATO, BARVA</label>  
-          <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="color" name="color">bílé
+                    <div class="form-group">
+                        <div class="col-sm-9 col-sm-offset-3" style="text-align: center;">
+                            
+                            <button type="submit" class="btn btn-primary" id="btn_Odeslat_order" >Odeslat</button>
+                        </div>
 
-
-            </label>
-          </div>
-          <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="color" name="color" value="žluté">žluté
-              </label>
-          </div>
-          <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="color" name="color" value="červené">červené
-              </label>
-          </div>
-
-          <label for="inputEmail4"> TEXT RYTINY DO PRSTENU</label>  
-
-          <div class="form-group">
-            <label for="usr">dámský:</label>
-            <input type="text" class="form-control" id="text_engraving_male" name="text_engraving_male">
-          </div>
-
-            <div class="form-group">
-            <label for="usr">pánský:</label>
-            <input type="text" class="form-control" id="text_engraving_female" name="text_engraving_female">
-          </div>
-
-          <label for="inputEmail4">ZPůSOB PřEVZTÍ</label>  
-          <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="takeover_method" name="takeover_method" value="Česká pošta dobírka">Česká pošta dobírka
-            </label>
-          </div>
-          <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="takeover_method" name="takeover_method" value="osobně na adrese provozovny">osobně na adrese provozovny
-              </label>
-          </div>
-          <span> Objednávka telefonicky: 732 450 054</span>
-        
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Vaše poznámky, vlastní úpravy:</label>
-            <textarea class="form-control" id="notes" name="notes"></textarea>
-          </div>
-          
-
-                  </form>
+                    </div>
+                    <div id="success">
+                     
+                    </div>
+                    
+                </form>
+                
       </div>
       </div>
             <div class="modal-footer">
             
-      <button type="submit" id="btn_Odeslat_order" name="btn_Odeslat_order" class="btn btn-primary">Odeslat</button>
-              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-      
+    
+              
             </div>
           </div>
         </div>
@@ -300,7 +347,7 @@
       </div>
       <div class="container">
             <div class="modal-body">
-                <form id="form_calculation" name="form_calculation">
+                <form id="form_calculation" name="form_calculation" method="post" class="form-horizontal">
           <label for="inputEmail4">NEZÁVAZNÝ VÝPOčET CENY</label>
                     <div class="form-row">
           
@@ -326,7 +373,7 @@
           
             <div class="form-group col-md-6">
             <label for="inputEmail4">dámský:</label>
-            <input type="email" class="form-control" id="type_male"  name="type_male" placeholder="">
+            <input type="text" class="form-control" id="type_male"  name="type_male" placeholder="">
             </div>
             <div class="form-group col-md-6">
             <label for="inputPassword4">pánský:
@@ -339,7 +386,7 @@
           
             <div class="form-group col-md-6">
             <label for="inputEmail4">dámský:</label>
-            <input type="email" class="form-control" id="size_male" name="size_male" placeholder="">
+            <input type="text" class="form-control" id="size_male" name="size_male" placeholder="">
             </div>
             <div class="form-group col-md-6">
             <label for="inputPassword4">pánský:
@@ -353,13 +400,13 @@
           <label for="inputEmail4">TYP KAMENE</label>  
           <div class="form-check">
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="type_stone" name="type_stone" >zirkon
+                <input type="radio" class="form-check-input" id="type_stone" value="1" name="type_stone" checked >zirkon
 
             </label>
           </div>
           <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="type_stone" name="type_stone">briliant
+                <input type="radio" class="form-check-input" id="type_stone" value="2" name="type_stone">briliant
               </label>
           </div>
 
@@ -367,13 +414,13 @@
           <label for="inputEmail4">MATERIÁL</label>  
           <div class="form-check">
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="material" name="material">zlato 14kt
+                <input type="radio" class="form-check-input" id="material" value="1" name="material" checked>zlato 14kt
 
             </label>
           </div>
           <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="material" name="material">stříbro
+                <input type="radio" class="form-check-input" value="2" id="material" name="material">stříbro
               </label>
           </div>
           
@@ -381,19 +428,19 @@
           <label for="inputEmail4"> ZLATO, BARVA</label>  
           <div class="form-check">
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="color" name="color">bílé
+                <input type="radio" class="form-check-input" id="color" value="1" name="color" checked>bílé
 
 
             </label>
           </div>
           <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="color" name="color">žluté
+                <input type="radio" class="form-check-input" id="color" value="2" name="color">žluté
               </label>
           </div>
           <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" id="color" name="color">červené
+                <input type="radio" class="form-check-input" id="color" value="3" name="color">červené
               </label>
           </div>
           <div class="form-group">
@@ -408,13 +455,16 @@
             <label for="message-text" class="col-form-label">Vaše poznámky, vlastní úpravy:</label>
             <textarea class="form-control" id="notes" name="notes"></textarea>
           </div>
-
+          <div id="success_c">
+                     
+                    </div>
+<button type="submit" id="btn_Odeslat_calculation" name="btn_Odeslat_calculation" class="btn btn-primary">Odeslat</button>
                   </form>
       </div>
       </div>
             <div class="modal-footer">
             
-      <button type="su" id="btn_Odeslat_calculation" name="btn_Odeslat_calculation" class="btn btn-primary">Odeslat</button>
+      
               <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
       
             </div>
@@ -423,31 +473,257 @@
     </div>
     
 
+<script>
+$(document).ready(function() {
+    $('#form_order').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            name: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+             address: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+             zip_code: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+             contact_email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            contact_telephone: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            type_male: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            type_female: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            size_male: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            size_female: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            city: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            size_female: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            text_engraving_female: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            type_stone: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            num_stone: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            material: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            color: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            text_engraving_male: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            takeover_method: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            notes: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+          
+           
+        }
+    }).on('success.form.bv', function(e) {
+          
+            e.preventDefault();
+            
+            $.ajax({ type: "POST",url: "<?php echo site_url('save_order')?>",data: $('#form_order').serialize(),
+          success: function(data)
+                  {
+                    $("#success").append("<div class='alert alert-success'>úspěch </div>" );
+                     setTimeout(refrescar,5000);
+                      
+                  }
+            });
 
+          });
+});
+ function refrescar() { 
+        location.reload(); 
+    }
+</script>
 
  <script>
 
   $(function() {
 
-    $("#btn_Odeslat_order").click(function() 
-    {
-      $.ajax({ type: "POST",url: "<?php echo site_url('save_order')?>",data: $('#form_order').serialize(),
-          success: function(data)
-          {
-          }
-    });
-    
+
+ $('#form_calculation').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            name: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+
+          email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+             },
+          telephone: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+              },
+             type_male: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                } 
+              },
+               type_female: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                  }
+                },
+                size_male: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                  }
+                },
+                size_female: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                   }
+                },
+
+
+        }
+    }).on('success.form.bv', function(e) {
+          
+            e.preventDefault();
+            
+           $.ajax({ type: "POST",url: "<?php echo site_url('calculation')?>",data: $('#form_calculation').serialize(),
+                  success: function(data)
+                  {
+
+                    $("#success_c").append("<div class='alert alert-success'>úspěch </div>" );
+                     setTimeout(refrescar,5000);
+
+                  }
+            });
+
+          });
+
+   
+
   });
 
-  $("#btn_Odeslat_calculation").click(function() 
-    {
-      $.ajax({ type: "POST",url: "<?php echo site_url('calculation')?>",data: $('#form_calculation').serialize(),
-          success: function(data)
-          {
-          }
-    });  
-  }); 
-
-  });
-  
+ 
 </script>
