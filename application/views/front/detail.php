@@ -161,7 +161,7 @@
                     <div class="form-group">
                         <label class="col-sm-6 control-label">kontaktní e-mail:</label>
                         <div class="col-sm-12">
-                            <input type="text" class="form-control" name="contact_email" />
+                            <input type="email" class="form-control" name="contact_email" />
                         </div>
                     </div>
                     <label for="inputEmail4">TYP PRSTENU</label>
@@ -486,133 +486,133 @@ $(document).ready(function() {
             name: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The name is required'
                     }
                 }
             },
              address: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The address is required'
                     }
                 }
             },
              zip_code: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The zip code is required'
                     }
                 }
             },
              contact_email: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The contact email is required'
                     }
                 }
             },
             contact_telephone: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The contact telephone is required'
                     }
                 }
             },
             type_male: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The type male is required'
                     }
                 }
             },
             type_female: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The type female is required'
                     }
                 }
             },
             size_male: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The size male is required'
                     }
                 }
             },
             size_female: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The size size female is required'
                     }
                 }
             },
             city: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The city is required'
                     }
                 }
             },
             size_female: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The size female is required'
                     }
                 }
             },
             text_engraving_female: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The text engraving female is required'
                     }
                 }
             },
             type_stone: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The type stone is required'
                     }
                 }
             },
             num_stone: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The num stone is required'
                     }
                 }
             },
             material: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The material is required'
                     }
                 }
             },
             color: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The color is required'
                     }
                 }
             },
             text_engraving_male: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The text engraving male  is required'
                     }
                 }
             },
             takeover_method: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The takeover method is required'
                     }
                 }
             },
             notes: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The notes is required'
                     }
                 }
             },
@@ -655,7 +655,7 @@ $(document).ready(function() {
             name: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The name is required'
                     }
                 }
             },
@@ -663,42 +663,42 @@ $(document).ready(function() {
           email: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The email is required'
                     }
                 }
              },
           telephone: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The telephone is required'
                     }
                 }
               },
              type_male: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The type male is required'
                     }
                 } 
               },
                type_female: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The type female is required'
                     }
                   }
                 },
                 size_male: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The size size male is required'
                     }
                   }
                 },
                 size_female: {
                 validators: {
                     notEmpty: {
-                        message: 'The gender is required'
+                        message: 'The size female is required'
                     }
                    }
                 },
