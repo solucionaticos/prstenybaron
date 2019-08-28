@@ -29,7 +29,7 @@
 						{products}
 		    			<div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3">
 		    				<div class="product">
-		    					<a href="{base_url}home/detail/{url}"><img class="img-fluid lazy"  src="https://placehold.it/250x250?text=Ring" data-src="{base_url}assets/uploads/files/products/{image}" alt="{name}"></a>
+		    					<a href="{base_url}home/detail/{url}"><img class="img-fluid lazy" src="{base_url}assets/images/lazy.png" data-src="{base_url}assets/uploads/files/products/{image}" alt="{name}"></a>
 								<div class="text-center">
 		    						<div class="prd-link"><a href="{base_url}home/detail/{url}">{name}</a></div>
 								</div>								
