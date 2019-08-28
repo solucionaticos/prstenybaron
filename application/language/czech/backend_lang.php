@@ -78,7 +78,7 @@ $lang['b_orders_label_material'] = "material";
 $lang['b_orders_label_color'] = "color";
 $lang['b_orders_label_text_engraving_male'] = "text_engraving_male";
 $lang['b_orders_label_text_engraving_female'] = "text_engraving_female";
-$lang['b_orders_label_'] = "takeover_method";
+$lang['b_orders_label_takeover_method'] = "takeover_method";
 $lang['b_orders_label_notes'] = "notes";
 $lang['b_orders_label_created_at'] = "created_at";
 
