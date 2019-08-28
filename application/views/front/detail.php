@@ -273,12 +273,12 @@
                      <div class="col-sm-12">
                              <div class="radio">
                                 <label>
-                                    <input type="radio" name="takeover_method" value="bílé" checked /> Česká pošta dobírka 
+                                    <input type="radio" name="takeover_method" value="1" checked /> Česká pošta dobírka 
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="takeover_method" value="osobně na adrese provozovny" /> osobně na adrese provozovny
+                                    <input type="radio" name="takeover_method" value="2" /> osobně na adrese provozovny
                                 </label>
                             </div>
                           
