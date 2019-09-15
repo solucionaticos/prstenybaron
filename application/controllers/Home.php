@@ -55,7 +55,7 @@ class Home extends MY_Controller {
 
 		$viewEmail = $this->parser->parse('emails/front/order', $data, true);
 
-		$this->utilities->sendEmail($this->config->item('email'), 'Order', $viewEmail)
+		$this->utilities->sendEmail($this->config->item('email'), 'Order', $viewEmail);
 
 	}
 	public function calculation()
@@ -86,7 +86,7 @@ class Home extends MY_Controller {
 
 		$viewEmail = $this->parser->parse('emails/front/calculation', $data, true);
 
-		$this->utilities->sendEmail($this->config->item('email'), 'Calculation', $viewEmail)
+		$this->utilities->sendEmail($this->config->item('email'), 'Calculation', $viewEmail);
 
 	}
 	
