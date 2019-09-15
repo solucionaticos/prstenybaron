@@ -20,6 +20,13 @@ class Settings extends MY_Controller {
     public function index() {
         $crud = new grocery_CRUD(); // Definicion del CRUD
         $crud->set_table("settings"); // Tabla del Crud
+
+        //-- No insert records ------------
+        $crud->unset_add();
+        //-- No delete records ------------
+        $crud->unset_delete();
+
+        
         //-- Lista --------
         $crud->columns($this->lang->line('b_settings_label_title', FALSE),$this->lang->line('b_settings_label_logo', FALSE),$this->lang->line('b_settings_label_whatsapp', FALSE),$this->lang->line('b_settings_label_facebook', FALSE),$this->lang->line('b_settings_label_instagram', FALSE),$this->lang->line('b_settings_label_email', FALSE),$this->lang->line('b_settings_label_telephone', FALSE),$this->lang->line('b_settings_label_city', FALSE),$this->lang->line('b_settings_label_address_1', FALSE),$this->lang->line('b_settings_label_address_2', FALSE),$this->lang->line('b_settings_label_zip_code', FALSE),$this->lang->line('b_settings_label_contact_name', FALSE),$this->lang->line('b_settings_label_contact_identification', FALSE),$this->lang->line('b_settings_label_latitude', FALSE),$this->lang->line('b_settings_label_longitude', FALSE));
         //-- Nuevo --------

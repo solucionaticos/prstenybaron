@@ -2,6 +2,9 @@
 <html lang="cz">
 <head>
 	<title>Prsteny Baroň</title>
+
+	<link href="{base_url}assets/images/icons/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -23,6 +26,63 @@
 		}
 	</style>
 
+
+	<!--=====================================
+	HTML5
+	======================================-->
+	<meta name="title" content="Prsteny Baroň">
+	<meta name="description" content="{meta_description}">
+	<meta name="keyword" content="{meta_keywords}">
+
+	<!--=====================================
+	FACEBOOK
+	======================================-->
+	<meta property="og:title"   content="Prsteny Baroň">
+	<meta property="og:url" content="{base_url}">
+	<meta property="og:description" content="{meta_description}">
+<?php 
+if ($meta_image != '') {
+?>
+	<meta property="og:image"  content="{base_url}assets/uploads/files/products_meta/{meta_image}">
+<?php
+}
+?>
+	<meta property="og:type"  content="website">	
+	<meta property="og:site_name" content="Prsteny Baroň">
+	<meta property="og:locale" content="es_CO">
+
+	<!--=====================================
+	GOOGLE
+	======================================-->
+	<meta itemprop="name" content="Prsteny Baroň">
+	<meta itemprop="url" content="{base_url}">
+	<meta itemprop="description" content="{meta_description}">
+<?php 
+if ($meta_image != '') {
+?>
+	<meta itemprop="image" content="{base_url}assets/uploads/files/products_meta/{meta_image}">
+<?php
+}
+?>
+
+	<!--=====================================
+	TWITTER
+	======================================-->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Prsteny Baroň">
+	<meta name="twitter:url" content="{base_url}/">
+	<meta name="twitter:description" content="{meta_description}">
+<?php 
+if ($meta_image != '') {
+?>
+	<meta name="twitter:image" content="{base_url}assets/uploads/files/products_meta/{meta_image}">
+<?php
+}
+?>
+	<meta name="twitter:site" content="@prstenybaron">
+
+
+
 </head>
 <body>
 	<header>
@@ -31,7 +91,7 @@
 			<div class="col-md-4 d-none d-md-block"></div>
 			<div class="col-md-4 text-center d-none d-md-block">
 				<a class="navbar-brand d-none d-md-block" href="{base_url}">
-					<img src="{base_url}assets/images/logo.png" width="200">
+					<img src="{base_url}assets/uploads/files/settings/{logo}" width="200">
 				</a>
 			</div>			
 			<div class="col-md-4 text-right nowrap pr3p pt15 d-none d-md-block">

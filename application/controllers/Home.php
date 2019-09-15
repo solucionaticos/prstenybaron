@@ -18,7 +18,7 @@ class Home extends MY_Controller {
 			'value_footer' => 'active'
 		);
 
-		$this->_load_work_area_general('front/home', $nav, $page->title, $page->description);
+		$this->_load_work_area_general('front/home', $nav, $page->title, $page->description, $page->meta_keywords, $page->meta_description,  $page->meta_image);
 
 	}
 	
@@ -49,6 +49,13 @@ class Home extends MY_Controller {
 
 		$this->Model->insert('order', $data);
 
+		$settings = $this->Model->getRow('settings', 1); 
+		$data['base_url'] = dase_url();
+		$data['logo'] = $settings->logo;
+
+		$viewEmail = $this->parser->parse('emails/front/order', $data, true);
+
+		$this->utilities->sendEmail($this->config->item('email'), 'Order', $viewEmail)
 
 	}
 	public function calculation()
@@ -73,6 +80,13 @@ class Home extends MY_Controller {
 
 		$this->Model->insert('price_calculation', $data);
 
+		$settings = $this->Model->getRow('settings', 1); 
+		$data['base_url'] = dase_url();
+		$data['logo'] = $settings->logo;
+
+		$viewEmail = $this->parser->parse('emails/front/calculation', $data, true);
+
+		$this->utilities->sendEmail($this->config->item('email'), 'Calculation', $viewEmail)
 
 	}
 	
@@ -88,7 +102,7 @@ class Home extends MY_Controller {
 			'value_footer' => 'active'
 		);
 
-		$this->_load_work_area_general('front/home', $nav, $page->title, $page->description);
+		$this->_load_work_area_general('front/home', $nav, $page->title, $page->description, $page->meta_keywords, $page->meta_description,  $page->meta_image);
 
 	}
 
@@ -104,7 +118,7 @@ class Home extends MY_Controller {
 			'value_footer' => 'active'
 		);
 
-		$this->_load_work_area_general('front/home', $nav, $page->title, $page->description);
+		$this->_load_work_area_general('front/home', $nav, $page->title, $page->description, $page->meta_keywords, $page->meta_description,  $page->meta_image);
 
 	}
 
@@ -119,7 +133,7 @@ class Home extends MY_Controller {
 			'value_footer' => 'active'
 		);
 
-		$this->_load_work_area_general('front/home', $nav, $page->title, $page->description);
+		$this->_load_work_area_general('front/home', $nav, $page->title, $page->description, $page->meta_keywords, $page->meta_description,  $page->meta_image);
 
 	}
 
@@ -134,11 +148,11 @@ class Home extends MY_Controller {
 			'value_footer' => 'active'
 		);
 
-		$this->_load_work_area_general('front/home', $nav, $page->title, $page->description);
+		$this->_load_work_area_general('front/home', $nav, $page->title, $page->description, $page->meta_keywords, $page->meta_description,  $page->meta_image);
 
 	}
 
-	function _load_work_area_general($template, $nav, $title = '', $description = '') {
+	function _load_work_area_general($template, $nav, $title = '', $description = '', $meta_keywords = '', $meta_description = '',  $meta_image = '') {
 
 		$settings = $this->Model->getRow('settings', 1); 
 		$products = $this->Model->getRowsJoin('product');
@@ -150,7 +164,11 @@ class Home extends MY_Controller {
 			'facebook_url' => $settings->facebook,
 			'instagram_url' => $settings->instagram,
 			'whatsapp_number' => $settings->whatsapp,
+			'logo' => $settings->logo,
 			'products' => $products,
+			'meta_keywords' => $meta_keywords, 
+			'meta_description' => $meta_description,  
+			'meta_image' => $meta_image,
 			$nav['class_header'] => $nav['value_header'],
 			$nav['class_footer'] => $nav['value_footer']
 		);
@@ -191,6 +209,7 @@ class Home extends MY_Controller {
 	}
 
 	function _load_work_area_category($template, $nav, $title, $products) {
+		$page = $this->Model->getRow('pages', 1); 
 
 		$settings = $this->Model->getRow('settings', 1); 
 		$data = array(
@@ -200,6 +219,10 @@ class Home extends MY_Controller {
 			'facebook_url' => $settings->facebook,
 			'instagram_url' => $settings->instagram,
 			'whatsapp_number' => $settings->whatsapp,
+			'logo' => $settings->logo,			
+			'meta_keywords' => $page->meta_keywords,
+			'meta_description' => $page->meta_description,
+			'meta_image' => $page->meta_image,
 			'products' => $products,
 			$nav['class_header'] => $nav['value_header'],
 			$nav['class_footer'] => $nav['value_footer']
@@ -229,6 +252,10 @@ class Home extends MY_Controller {
 			'address_2' => $settings->address_2,
 			'zip_code' => $settings->zip_code,
 			'city' => $settings->city,
+			'logo' => $settings->logo,			
+			'meta_keywords' => $page->meta_keywords,
+			'meta_description' => $page->meta_description,
+			'meta_image' => $page->meta_image,
 			'products' => $products,
 			'nav_header_contact' => 'nav-link-active',
 			'nav_footer_contact' => 'active'
@@ -268,7 +295,7 @@ class Home extends MY_Controller {
 			'facebook_url' => $settings->facebook,
 			'instagram_url' => $settings->instagram,
 			'whatsapp_number' => $settings->whatsapp,
-
+			'logo' => $settings->logo,			
 			'name' => $product->name,
 			'url' => $product->url,
 			'description' => $product->description,
@@ -281,7 +308,6 @@ class Home extends MY_Controller {
 			'meta_keywords' => $product->meta_keywords,
 			'meta_description' => $product->meta_description,
 			'meta_image' => $product->meta_image,
-
 			'images' =>$images,
 			'related_products' =>$related_products
 		);
