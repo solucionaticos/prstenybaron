@@ -61,6 +61,8 @@ class Product extends MY_Controller {
         $crud->field_type("price_brillants", "numeric");
         $crud->field_type("meta_keywords", "string");
         $crud->field_type("meta_description", "text");
+        $crud->unset_texteditor('meta_description');
+
         //$crud->field_type("meta_image", "string");
         $crud->field_type("created_at", "datetime");
 

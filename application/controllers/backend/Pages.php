@@ -44,6 +44,8 @@ class Pages extends MY_Controller {
         $crud->field_type("description", "text");
         $crud->field_type("meta_keywords", "string");
         $crud->field_type("meta_description", "text");
+        $crud->unset_texteditor('meta_description');
+
         //$crud->field_type("meta_image", "string");
         $crud->field_type("created_at", "datetime");
 
