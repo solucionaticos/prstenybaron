@@ -36,6 +36,7 @@ $lang['b_products_label_created_at'] = "Created at";
 $lang['b_products_label_name'] = "name";
 $lang['b_products_label_url'] = "url";
 $lang['b_products_label_category_id'] = "category_id";
+$lang['b_products_label_sku'] = "sku";
 $lang['b_products_label_image'] = "image";
 $lang['b_products_label_material'] = "material";
 $lang['b_products_label_width'] = "width";

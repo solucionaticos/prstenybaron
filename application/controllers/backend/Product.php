@@ -25,16 +25,31 @@ class Product extends MY_Controller {
         $crud->order_by('id','desc');
 
         //-- Lista --------
-        $crud->columns($this->lang->line('b_products_label_name', FALSE), $this->lang->line('b_products_label_url', FALSE),$this->lang->line('b_products_label_category_id', FALSE),$this->lang->line('b_products_label_image', FALSE), $this->lang->line('b_products_label_material', FALSE),$this->lang->line('b_products_label_width', FALSE),$this->lang->line('b_products_label_price_size', FALSE),$this->lang->line('b_products_label_price_brillants', FALSE),$this->lang->line('b_products_label_meta_keywords', FALSE),$this->lang->line('b_products_label_meta_image', FALSE),$this->lang->line('b_products_label_created_at', FALSE));
+        $crud->columns(
+            $this->lang->line('b_products_label_name', FALSE), 
+            $this->lang->line('b_products_label_url', FALSE),
+            $this->lang->line('b_products_label_category_id', FALSE),
+            $this->lang->line('b_products_label_sku', FALSE),
+            $this->lang->line('b_products_label_image', FALSE), 
+            $this->lang->line('b_products_label_material', FALSE),
+            $this->lang->line('b_products_label_width', FALSE),
+            $this->lang->line('b_products_label_price_size', FALSE),
+            $this->lang->line('b_products_label_price_brillants', FALSE),
+            $this->lang->line('b_products_label_meta_keywords', FALSE),
+            $this->lang->line('b_products_label_meta_image', FALSE),
+            $this->lang->line('b_products_label_created_at', FALSE));
         //-- Nuevo --------
-        $crud->add_fields("name","url","description","category_id","image","material","width","price_size","price_brillants","meta_keywords","meta_description","meta_image");
+        $crud->add_fields("name","url","description","category_id","sku","image","material","width","price_size","price_brillants","meta_keywords","meta_description","meta_image");
         //-- Editar --------
-        $crud->edit_fields("name","url","description","category_id","image","material","width","price_size","price_brillants","meta_keywords","meta_description","meta_image");
+        $crud->edit_fields("name","url","description","category_id","sku","image","material","width","price_size","price_brillants","meta_keywords","meta_description","meta_image");
         //-- Etiquetas --------
         $crud->display_as($this->lang->line('b_products_label_name', FALSE),"Name");
         $crud->display_as($this->lang->line('b_products_label_url', FALSE),"Url");
         $crud->display_as("description","Description");
         $crud->display_as($this->lang->line('b_products_label_category_id', FALSE),"Category");
+
+        $crud->display_as($this->lang->line('b_products_label_sku', FALSE),"Sku");
+
         $crud->display_as($this->lang->line('b_products_label_image', FALSE),"Image");
         $crud->display_as($this->lang->line('b_products_label_material', FALSE),"Material");
         $crud->display_as($this->lang->line('b_products_label_width', FALSE),"Width");
@@ -55,6 +70,7 @@ class Product extends MY_Controller {
         $crud->field_type("description", "text");
         //$crud->field_type("category_id", "numeric");
         //$crud->field_type("image", "string");
+        $crud->field_type("sku", "string");
         $crud->field_type("material", "string");
         $crud->field_type("width", "string");
         $crud->field_type("price_size", "numeric");
