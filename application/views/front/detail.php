@@ -30,7 +30,7 @@
                   <div class="carousel-inner">
                   {images}
                    <div class="carousel-item {class} text-center">
-                    <img class="img-fluid" src="{base_url}assets/uploads/files/{path}/{image}">
+                    <img class="img-fluid" src="{base_url}assets/uploads/files/{path}/{image}" itemprop="image">
                   </div>
                   {/images}
                 </div>
