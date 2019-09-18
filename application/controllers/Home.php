@@ -299,6 +299,7 @@ class Home extends MY_Controller {
 			'name' => $product->name,
 			'url' => $product->url,
 			'description' => $product->description,
+			'sku' => $product->sku,
 			'category_id' => $product->category_id,
 			'image' => $product->image,
 			'material' => $product->material,

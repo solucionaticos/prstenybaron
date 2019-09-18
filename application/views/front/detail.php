@@ -46,14 +46,15 @@
 
             </div>
             <div class="col-lg-7">
-              <div class="shop-single-item">
-                <h2 class="shop-single-item-title">{name}</h2>
+              <div class="shop-single-item" itemscope itemtype="http://schema.org/Product">
+                <h2 class="shop-single-item-title" itemprop="name">{name}</h2>
 
                 <h4 class="shop-single-item-price">Cena na Velikosti: {price_size}</h4>
                 <h4 class="shop-single-item-price">Cena s Brilianty: {price_brillants}</h4>
                 <div class="shop-single-item-description">
-                  <p>{description}</p>
+                  <p itemprop="description">{description}</p>
                 </div>
+                <span itemprop="sku" style="display:none;">{sku}</span>
 
                 <hr class="m-t-30 m-b-30">
 
