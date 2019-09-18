@@ -155,7 +155,7 @@ class Home extends MY_Controller {
 	function _load_work_area_general($template, $nav, $title = '', $description = '', $meta_keywords = '', $meta_description = '',  $meta_image = '') {
 
 		$settings = $this->Model->getRow('settings', 1); 
-		$products = $this->Model->getRowsJoin('product');
+		$products = $this->Model->getRowsJoin('product', '', array(), array(), 'name');
 		foreach ($products as $key => $value) $products[$key]['base_url'] = base_url();
 		$data = array(
 			'base_url' => base_url(),
